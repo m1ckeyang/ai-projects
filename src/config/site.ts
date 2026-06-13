@@ -57,33 +57,49 @@ const generateDates = () => {
   return dates
 }
 
-// 2026年6月11日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
+// 2026年6月14日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
 const trendingProjects: Project[] = [
   {
     id: 1,
     name: "agent-skills",
     fullName: "addyosmani/agent-skills",
     description: "Production-grade 工程技能，专为 AI 编码 Agent 设计，覆盖完整开发流程的 7 个斜杠命令",
-    stars: 54447,
+    stars: 58194,
     language: "Shell",
     color: "#F8DB5C",
     author: "addyosmani",
-    '通俗讲解': 'Google 工程师 Addy Osmani 做了一套让 AI 编程工具像高级工程师一样工作的技能包！装了之后 Claude Code 或 Codex 就会先规划再写代码，有 /spec、/plan、/build 等命令。今天暴涨 3,275 个星，增长最猛！',
-    tutorial: `🎯 今天我们要给 AI 装上"高级工程师技能包"！\n\n📦 第一步：安装\n在 Claude Code 中执行：\n/plugin marketplace add addyosmani/agent-skills\n/plugin install agent-skills@addy-agent-skills\n\n✨ 第二步：试试命令\n/spec "帮我做一个待办事项列表" - 先规划\n/build - 然后自动实现！`,
+    '通俗讲解': 'Google 工程师 Addy Osmani 做了一套让 AI 编程工具像高级工程师一样工作的技能包！装了之后 Claude Code 或 Codex 就会先规划再写代码，有 /spec、/plan、/build 等命令。今天暴涨 1,507 个星，增长最猛！',
+    tutorial: `🎯 今天我们要给 AI 装上"高级工程师技能包"！
+
+📦 第一步：安装
+在 Claude Code 中执行：
+/plugin marketplace add addyosmani/agent-skills
+/plugin install agent-skills@addy-agent-skills
+
+✨ 第二步：试试命令
+/spec "帮我做一个待办事项列表" - 先规划
+/build - 然后自动实现！`,
     difficulty: "入门",
     estimatedTime: "15分钟"
   },
   {
     id: 2,
-    name: "system-prompts-and-models-of-ai-tools",
-    fullName: "x1xhlol/system-prompts-and-models-of-ai-tools",
-    description: "汇集 30+ 主流 AI 工具的内部系统提示词和模型配置，包括 Cursor、Claude Code、Windsurf、Replit、v0 等",
-    stars: 15200,
-    language: "TypeScript",
-    color: "#3178C6",
-    author: "x1xhlol",
-    '通俗讲解': '每个 AI 工具都有"内心独白"（系统提示词），这个仓库帮你收集了 Cursor、Claude Code、Windsurf 等 30 多个工具的提示词！学会这些，你就掌握了让 AI 变更强的秘诀。',
-    tutorial: `🎯 今天我们要学习"AI 的工具秘密"！\n\n📦 第一步：克隆仓库\ngit clone https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools.git\ncd system-prompts-and-models-of-ai-tools\n\n✨ 第二步：浏览提示词\ncd prompts && ls\n看看各个工具的"内心独白"长什么样\n\n🎮 第三步：应用到你的 AI\n复制你最感兴趣的提示词到你的 AI 工具配置中`,
+    name: "superpowers",
+    fullName: "obra/superpowers",
+    description: "Agentic skills 框架和软件开发方法论，让 AI 编码工具拥有超能力，自动规划+测试+实现",
+    stars: 226846,
+    language: "Shell",
+    color: "#3572A5",
+    author: "obra",
+    '通俗讲解': '普通的 AI 编程助手一上来就写代码，但 superpowers 让 AI 先问"你到底想做什么"，然后写计划、做测试、再一步步实现。就像雇佣了一个真正靠谱的高级工程师！今天涨了 931 个星。',
+    tutorial: `🎯 今天我们要给 AI 装上"超能力"！
+
+📦 第一步：安装
+在 Claude Code 中：
+/plugin install superpowers@claude-plugins-official
+
+✨ 第二步：试试
+打开你的项目，AI 会自动问你"你想做什么"，然后自己规划、实施！`,
     difficulty: "入门",
     estimatedTime: "15分钟"
   },
@@ -92,110 +108,198 @@ const trendingProjects: Project[] = [
     name: "SkillSpector",
     fullName: "NVIDIA/SkillSpector",
     description: "英伟达出品：AI Agent 技能安全扫描器，检测漏洞、恶意模式和安全隐患",
-    stars: 2553,
+    stars: 4331,
     language: "Python",
     color: "#76B900",
     author: "NVIDIA",
-    '通俗讲解': '英伟达出了个 AI 保镖！给你的 AI Agent 装的各种"技能包"可能有危险——比如偷偷读取你的文件、发送恶意代码。SkillSpector 帮你扫描所有技能包，确保安全。今天涨了 308 个星。',
-    tutorial: `🎯 今天我们要给 AI Agent 做"体检"！\n\n📦 第一步：安装\npip install skillspector\n\n✨ 第二步：扫描你的技能包\nskillspector scan ~/.claude/skills/\n看看有没有不安全的地方\n\n🎮 第三步：修复问题\n根据报告修复或移除有风险的技能`,
+    '通俗讲解': '英伟达出了个 AI 保镖！给你的 AI Agent 装的各种"技能包"可能有危险——比如偷偷读取你的文件、发送恶意代码。SkillSpector 帮你扫描所有技能包，确保安全。今天暴涨 809 个星！',
+    tutorial: `🎯 今天我们要给 AI Agent 做"体检"！
+
+📦 第一步：安装
+pip install skillspector
+
+✨ 第二步：扫描你的技能包
+skillspector scan ~/.claude/skills/
+看看有没有不安全的地方
+
+🎮 第三步：修复问题
+根据报告修复或移除有风险的技能`,
     difficulty: "入门",
     estimatedTime: "10分钟"
   },
   {
     id: 4,
-    name: "openmed",
-    fullName: "maziyarpanahi/openmed",
-    description: "开源医疗 AI 工具，1000+ 医疗模型本地运行，无需云端，保护患者隐私",
-    stars: 2698,
-    language: "Python",
-    color: "#3572A5",
-    author: "maziyarpanahi",
-    '通俗讲解': '医疗数据太敏感不能上传到云端？openmed 帮你把 AI 完全跑在你的电脑或手机上！提取病历信息、去除个人隐私数据、做医学诊断分析——全部离线完成，患者数据一分都不离开你的设备。今天涨了 427 个星。',
-    tutorial: `🎯 今天我们要搭建"隐私医疗 AI"！\n\n📦 第一步：安装\npip install openmed\n\n✨ 第二步：使用\nfrom openmed import extract\nresult = extract("患者主诉：头痛、发热两天")\nprint(result)  # 自动提取医疗实体\n\n🎮 第三步：在 iPhone 上试试\n下载 OpenMedKit，本地运行医疗文本分析`,
-    difficulty: "进阶",
-    estimatedTime: "30分钟"
+    name: "system-prompts-and-models-of-ai-tools",
+    fullName: "x1xhlol/system-prompts-and-models-of-ai-tools",
+    description: "汇集 30+ 主流 AI 工具的内部系统提示词和模型配置，包括 Cursor、Claude Code、Windsurf、Replit、v0 等",
+    stars: 140270,
+    language: "TypeScript",
+    color: "#3178C6",
+    author: "x1xhlol",
+    '通俗讲解': '每个 AI 工具都有"内心独白"（系统提示词），这个仓库帮你收集了 Cursor、Claude Code、Windsurf 等 30 多个工具的提示词！学会这些，你就掌握了让 AI 变更强的秘诀。',
+    tutorial: `🎯 今天我们要学习"AI 的工具秘密"！
+
+📦 第一步：克隆仓库
+git clone https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools.git
+cd system-prompts-and-models-of-ai-tools
+
+✨ 第二步：浏览提示词
+cd prompts && ls
+看看各个工具的"内心独白"长什么样
+
+🎮 第三步：应用到你的 AI
+复制你最感兴趣的提示词到你的 AI 工具配置中`,
+    difficulty: "入门",
+    estimatedTime: "15分钟"
   },
   {
     id: 5,
-    name: "sia",
-    fullName: "hexo-ai/sia",
-    description: "自改进 AI 框架，让 AI 系统（模型/Agent）在基准任务上自动提升性能",
-    stars: 1215,
+    name: "LMCache",
+    fullName: "LMCache/LMCache",
+    description: "LMCache：最快的 LLM KV Cache 层，大幅提升大模型推理速度",
+    stars: 8848,
     language: "Python",
     color: "#3572A5",
-    author: "hexo-ai",
-    '通俗讲解': '一般的 AI 工具需要人来教它怎么变强，但 sia 让 AI 自己给自己"补课"！你给它一个任务（比如翻译、写代码），它自己尝试、评估、改进，越做越好。今天涨了 177 个星。',
-    tutorial: `🎯 今天我们要造一个"自我进化"的 AI！\n\n📦 第一步：安装\npip install sia\n\n✨ 第二步：定义任务\ndef my_task(text): return translate(text)\n\n🎮 第三步：让它自己进化\nsia.improve(my_task, iterations=100)\n看着 AI 自己变得越来越强！`,
-    difficulty: "进阶",
-    estimatedTime: "30分钟"
+    author: "ApostaC",
+    '通俗讲解': '大语言模型每次回答问题都要重新"思考"，太慢了！LMCache 就像给 AI 装了一个"记忆缓存"，把之前思考的结果存起来，下次直接调用，速度提升好几倍。今天涨了 246 个星。',
+    tutorial: `🎯 今天我们要给 AI 装上"超高速记忆缓存"！
+
+📦 第一步：安装
+pip install lmcache
+
+✨ 第二步：使用
+import lmcache
+cache = lmcache.LMCache()
+cache.put("key", "value")
+result = cache.get("key")  # 极速读取！
+
+🎮 第三步：集成到你的 LLM 应用
+让你的 AI 应用速度提升数倍！`,
+    difficulty: "入门",
+    estimatedTime: "15分钟"
   },
   {
     id: 6,
     name: "agentsview",
     fullName: "kenn-io/agentsview",
     description: "本地优先的 AI Agent 会话分析和仪表盘，支持 Claude Code、Codex 等 20+ Agent，比 ccusage 快 100 倍",
-    stars: 1576,
+    stars: 2306,
     language: "Go",
     color: "#00ADD8",
     author: "kenn-io",
-    '通俗讲解': '你用 Claude Code 写了多少代码？花了多少钱？用了多久？agentsview 像一个"运动手表"，实时追踪你的 AI 编程活动——调了几次、花了多少 token、成功率多少。今天涨了 98 个星。',
-    tutorial: `🎯 今天我们要给 AI 编程装上"仪表盘"！\n\n📦 第一步：安装\nnpm install -g @kenn-io/agentsview\n\n✨ 第二步：启动仪表盘\nagentsview serve\n浏览器打开就能看到你的 Agent 活动\n\n🎮 第三步：查看分析\n看看今天用了多少次 AI、花了多少钱、哪些任务最耗时`,
+    '通俗讲解': '你用 Claude Code 写了多少代码？花了多少钱？用了多久？agentsview 像一个"运动手表"，实时追踪你的 AI 编程活动——调了几次、花了多少 token、成功率多少。今天涨了 187 个星。',
+    tutorial: `🎯 今天我们要给 AI 编程装上"仪表盘"！
+
+📦 第一步：安装
+npm install -g @kenn-io/agentsview
+
+✨ 第二步：启动仪表盘
+agentsview serve
+浏览器打开就能看到你的 Agent 活动
+
+🎮 第三步：查看分析
+看看今天用了多少次 AI、花了多少钱、哪些任务最耗时`,
     difficulty: "入门",
     estimatedTime: "10分钟"
   },
   {
     id: 7,
-    name: "pm-skills",
-    fullName: "phuryn/pm-skills",
-    description: "PM Skills Marketplace：68 个产品经理技能 + 42 个工作流，从发现到发布全流程覆盖",
-    stars: 4200,
+    name: "aisuite",
+    fullName: "andrewyng/aisuite",
+    description: "统一接口调用多个生成式 AI 提供商，一个库搞定 OpenAI、Anthropic、Google 等",
+    stars: 14066,
     language: "Python",
     color: "#3572A5",
-    author: "phuryn",
-    '通俗讲解': '做产品管理太累了？pm-skills 就是帮你自动写 PRD、做竞品分析、规划发布策略的 AI 产品经理助手！68 个技能、42 个工作流，装了就像雇了一个资深产品经理。支持 Claude Code、Codex、Cursor 等。',
-    tutorial: `🎯 今天我们要安装"AI 产品经理"！\n\n📦 第一步：安装\n在 Claude Code 中：\n/plugin marketplace add phuryn/pm-skills\n/plugin install pm-toolkit@pm-skills\n\n✨ 第二步：试试命令\n/discover 发现新想法\n/write-prd 写产品需求文档\n/strategy 制定产品策略`,
+    author: "andrewyng",
+    '通俗讲解': '想用 GPT-4 用 Anthropic，想用 Claude 用 Google？aisuite 让你用同一套代码就能切换任何 AI 模型！今天还附带了一个桌面 AI 助手 OpenCoworker，可以帮你读文件、发消息、写报告。涨了 132 个星。',
+    tutorial: `🎯 今天我们要用"一个钥匙开所有 AI 的门"！
+
+📦 第一步：安装
+pip install aisuite
+
+✨ 第二步：统一调用
+import aisuite as ai
+client = ai.Client()
+# 轻松切换模型：openai:gpt-4o 或 anthropic:claude-3-5-sonnet
+result = client.chat.completions.create(
+  model="openai:gpt-4o",
+  messages=[{"role": "user", "content": "你好！"}]
+)
+
+🎮 第三步：试试桌面助手
+下载 OpenCoworker，让 AI 帮你处理电脑上的日常任务！`,
     difficulty: "入门",
     estimatedTime: "15分钟"
   },
   {
     id: 8,
-    name: "superpowers",
-    fullName: "obra/superpowers",
-    description: "Agentic skills 框架和软件开发方法论，让 AI 编码工具拥有超能力，自动规划+测试+实现",
-    stars: 6200,
-    language: "Python",
+    name: "chatwoot",
+    fullName: "chatwoot/chatwoot",
+    description: "开源多渠道客服平台，内置 AI 助手 Captain 自动化回答常见问题",
+    stars: 30806,
+    language: "Ruby",
     color: "#3572A5",
-    author: "obra",
-    '通俗讲解': '普通的 AI 编程助手一上来就写代码，但 superpowers 让 AI 先问"你到底想做什么"，然后写计划、做测试、再一步步实现。就像雇佣了一个真正靠谱的高级工程师！',
-    tutorial: `🎯 今天我们要给 AI 装上"超能力"！\n\n📦 第一步：安装\n在 Claude Code 中：\n/plugin install superpowers@claude-plugins-official\n\n✨ 第二步：试试\n打开你的项目，AI 会自动问你"你想做什么"，然后自己规划、实施！`,
+    author: "chatwoot",
+    '通俗讲解': 'Chatwoot 是一个开源的客户服务平台，可以统一管理网站聊天、邮件、WhatsApp 等所有客户咨询。现在还有了 AI 助手 Captain，能自动回答常见问题，大幅减少客服工作量。今天涨了 86 个星。',
+    tutorial: `🎯 今天我们要搭建"AI 客服系统"！
+
+📦 第一步：快速部署（Docker）
+docker run -d -p 3000:3000 chatwoot/chatwoot:latest
+
+✨ 第二步：登录管理后台
+浏览器打开 http://localhost:3000
+设置你的品牌和客服人员
+
+🎮 第三步：启用 AI 助手
+在设置中开启 Captain AI 功能，让 AI 自动回答常见问题`,
     difficulty: "入门",
-    estimatedTime: "15分钟"
+    estimatedTime: "20分钟"
   },
   {
     id: 9,
-    name: "agency-agents",
-    fullName: "msitarzewski/agency-agents",
-    description: "完整的 AI 代理团队——前端开发、后端架构、AI 工程、DevOps 等 16 个专业角色",
-    stars: 3500,
-    language: "Markdown",
+    name: "server",
+    fullName: "music-assistant/server",
+    description: "开源音乐助手，连接你的流媒体服务，智能推荐和管理音乐库",
+    stars: 1973,
+    language: "Python",
     color: "#3572A5",
-    author: "msitarzewski",
-    '通俗讲解': '一个人干不过一个团队？那就组建一个 AI 团队！这个仓库里有 16 个专业 AI 角色——前端开发、后端架构师、AI 工程师、DevOps 专家……每个都有独特的性格和工作流程。装上后告诉 Claude "让前端开发模式上线"，它就变成专业前端了！',
-    tutorial: `🎯 今天我们要组建"AI 虚拟团队"！\n\n📦 第一步：安装\n./scripts/install.sh --tool claude-code\n\n✨ 第二步：激活角色\n"Hey Claude, activate Frontend Developer mode"\n"Hey Claude, activate Backend Architect mode"\n\n🎮 第三步：让团队协同\n让前端开发做 UI，让后端架构师设计 API，一起干活！`,
+    author: "marcelveldt",
+    '通俗讲解': 'music-assistant 是一个智能音乐管家，可以连接你的 Spotify、Apple Music 等账号，统一管理所有音乐。AI 会根据你的听歌习惯智能推荐，还能控制各种智能音箱。今天涨了 277 个星。',
+    tutorial: `🎯 今天我们要搭建"个人 AI 音乐管家"！
+
+📦 第一步：安装（需要 Python 3.11+）
+pip install music-assistant
+
+✨ 第二步：启动服务
+music-assistant --config /path/to/config
+
+🎮 第三步：连接音乐服务
+连接你的 Spotify 或 Apple Music，AI 会开始学习你的音乐口味！`,
     difficulty: "入门",
     estimatedTime: "15分钟"
   },
   {
     id: 10,
-    name: "zhangxuefeng-skill",
-    fullName: "alchaincyf/zhangxuefeng-skill",
-    description: "张雪峰的认知操作系统——基于 5 本著作、15+ 篇采访、30+ 条语录提炼的思维框架",
-    stars: 850,
-    language: "Markdown",
+    name: "claude-mem",
+    fullName: "thedotmack/claude-mem",
+    description: "Claude Code 持久记忆层，跨会话保存 Agent 的经验和决策，让 AI 越用越聪明",
+    stars: 80800,
+    language: "Shell",
     color: "#3572A5",
-    author: "alchaincyf",
-    '通俗讲解': '张雪峰老师变成了 AI 技能包！"社会就是个大筛子""先看中间50%的人去哪，再选专业""家里没矿别谈理想"——他把这些接地气的认知框架做成了一个可运行的 skill。问高考志愿、职业规划、专业选择，他用张雪峰的视角给你分析！',
-    tutorial: `🎯 今天我们要请"张雪峰 AI"当顾问！\n\n📦 第一步：安装\nnpx skills add alchaincyf/zhangxuefeng-skill\n\n✨ 第二步：开始提问\n"用张雪峰的视角帮我分析这个专业选择"\n"张雪峰会怎么看这个职业方向？"\n\n🎮 第三步：深入探讨\n问他"家里没钱该选什么专业"、"AI 时代学什么最稳"`,
+    author: "thedotmack",
+    '通俗讲解': '每次你打开 Claude Code，它都会"失忆"，不记得之前做过什么。claude-mem 给 AI 装了个"记忆大脑"，自动记录你的工作决策和工具使用，下次开会话时 AI 就能"想起"之前的事情，越用越聪明！今天暴涨 80,800 星。',
+    tutorial: `🎯 今天我们要给 Claude Code 装上"记忆大脑"！
+
+📦 第一步：一键安装
+在 Claude Code 中执行：
+/plugin marketplace add thedotmack/claude-mem
+/plugin install claude-mem
+
+✨ 第二步：自动记忆
+现在 Claude Code 会自动记录你的工作决策和工具使用
+
+🎮 第三步：查看记忆
+打开 Claude Code，AI 会显示它"记住"了什么，跨会话依然有效！`,
     difficulty: "入门",
     estimatedTime: "10分钟"
   }
