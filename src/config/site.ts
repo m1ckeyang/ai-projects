@@ -57,118 +57,212 @@ const generateDates = () => {
   return dates
 }
 
-// 2026年6月17日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
+// 2026年6月18日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
 const trendingProjects: Project[] = [
   {
     id: 1,
-    name: "VoxCPM2",
-    fullName: "OpenBMB/VoxCPM",
-    description: "Tokenizer-Free 多语言语音合成：30种语言、创意声音设计、真实声音克隆，48kHz录音棚级音质",
-    stars: 12800,
+    name: "Agent-Reach",
+    fullName: "Panniantong/Agent-Reach",
+    description: "给AI Agent装上眼睛：一个CLI工具让它能浏览Twitter、Reddit、YouTube、GitHub、B站、小红书——零API费用",
+    stars: 33053,
     language: "Python",
     color: "#3572A5",
-    author: "OpenBMB",
-    '通俗讲解': '阿里巴巴旗下 OpenBMB 团队出的语音合成神器！你说"一个温柔的女声"，它就能凭空变出一个声音来读文字。还支持声音克隆——录10秒别人的声音，AI 就能用那个人的声音念任何文字。支持30种语言和方言，包括粤语、四川话、东北话！今天暴涨 413 颗星，声音赛道最火的项目没有之一。',
-    tutorial: `🎯 今天我们要搭建"AI 配音工作室"！
+    author: "Panniantong",
+    '通俗讲解': '你的 AI 助手只会搜 Google？这个工具直接给它装上"眼睛"！一条命令行，AI 就能去 Twitter、Reddit、YouTube、GitHub、B站、小红书上看内容。重点是——零 API 费用，直接抓网页数据！今天暴涨 1,154 颗星，增长猛到离谱，AI Agent 信息获取的终极方案。',
+    tutorial: `🎯 今天我们要让 AI 看遍全世界！
 
 📦 第一步：安装
-pip install voxcpm
+pip install agent-reach
 
-✨ 第二步：一句话生成语音
-from voxcpm import VoxCPM
-model = VoxCPM.from_pretrained("openbmb/VoxCPM2")
-wav = model.generate(text="(温柔女声)你好，欢迎来到AI配音世界！")
-保存成 wav 文件就能听了！
+✨ 第二步：简单查询
+agent-reach search --platform twitter --query "AI news"
+agent-reach search --platform bilibili --query "深度学习教程"
 
-🎮 第三步：声音克隆
-上传一段10秒的参考音频，AI 就能用那个声音念任何文字——中英文都可以！`,
+🎮 第三步：集成到 Agent
+在 LangChain / AutoGen / CrewAI 中直接调用，AI Agent 就能自主浏览网页获取信息了！`,
     difficulty: "入门",
     estimatedTime: "10分钟"
   },
   {
     id: 2,
-    name: "Understand-Anything",
-    fullName: "Egonex-AI/Understand-Anything",
-    description: "把任何代码库变成交互式知识图谱：用 AI 分析项目结构，可视化探索代码关系",
-    stars: 15600,
+    name: "UI-TARS-desktop",
+    fullName: "bytedance/UI-TARS-desktop",
+    description: "字节跳动开源多模态 AI Agent 框架：连接前沿 AI 模型与 Agent 基础设施，让 AI 能操作桌面",
+    stars: 36673,
     language: "TypeScript",
-    color: "#3178C6",
-    author: "Egonex-AI",
-    '通俗讲解': '刚加入一个新项目，代码几万行不知道从哪看起？这个项目帮你把整个代码库变成一张"关系地图"！每个文件、函数、类都是地图上的一个点，你能看到它们之间的关系。支持 Claude Code、Cursor、Copilot 等主流 AI 编程工具。今天暴涨 1,222 颗星，增长最猛！',
-    tutorial: `🎯 今天我们要给代码库"画地图"！
+    color: "#3572A5",
+    author: "bytedance",
+    '通俗讲解': '字节跳动搞了个大招！这个框架能让 AI 像人一样操作电脑——看到屏幕截图就能理解并执行操作。相当于给 AI 装上了"眼睛和手"，它可以看到你的桌面然后帮你点按钮、打字、移动鼠标。今天涨了 148 颗星，桌面自动化的新纪元。',
+    tutorial: `🎯 今天我们要搭建"AI 桌面助手"！
 
-📦 第一步：安装
-curl -fsSL https://raw.githubusercontent.com/Egonex-AI/Understand-Anything/main/install.sh | bash
+📦 第一步：克隆项目
+git clone https://github.com/bytedance/UI-TARS-desktop.git
+cd UI-TARS-desktop
 
-✨ 第二步：进入你的项目目录
-cd your-project
+✨ 第二步：安装依赖
+npm install
 
-🎮 第三步：生成知识图谱
-在 Claude Code 中输入 /understand
-就能看到一个交互式网页，展示整个项目的代码关系！`,
-    difficulty: "入门",
-    estimatedTime: "5分钟"
+🎮 第三步：运行
+npm start
+AI 就能通过截图理解你的屏幕并自动操作了！试试让它打开一个文件夹看看！`,
+    difficulty: "进阶",
+    estimatedTime: "20分钟"
   },
   {
     id: 3,
-    name: "zvec",
-    fullName: "alibaba/zvec",
-    description: "阿里巴巴出品：轻量级进程内向量数据库，毫秒级搜索数十亿向量，支持全文检索+混合搜索",
-    stars: 10500,
-    language: "C++",
-    color: "#3572A5",
-    author: "alibaba",
-    '通俗讲解': '阿里搞了个超快的"向量搜索引擎"，直接嵌在你的程序里就能用，不用单独部署服务器！搜十亿条数据只要几毫秒。最新还加了全文搜索功能——既能搜语义又能搜关键词，一个工具全搞定。今天涨了 188 颗星，RAG 应用的完美搭档。',
-    tutorial: `🎯 今天我们要搭建"超级搜索引擎"！
+    name: "codebase-memory-mcp",
+    fullName: "DeusData/codebase-memory-mcp",
+    description: "高性能代码智能 MCP 服务器：把代码库索引成知识图谱，158种语言，毫秒级响应，零依赖",
+    stars: 5031,
+    language: "C",
+    color: "#dea584",
+    author: "DeusData",
+    '通俗讲解': '给 AI 编程工具装上"超级大脑"！这个工具把你的整个代码库变成知识图谱，AI 提问时毫秒级回答。支持 158 种编程语言，而且是一个独立的二进制文件——不用装任何依赖！今天暴涨 718 颗星，Claude Code、Cursor 等编程 AI 的神器搭档。',
+    tutorial: `🎯 今天我们要给 AI 编程工具装上"超级大脑"！
 
-📦 第一步：安装
-pip install zvec
+📦 第一步：下载二进制
+去 GitHub Releases 页面下载对应系统的二进制文件
 
-✨ 第二步：创建向量数据库
-import zvec
-schema = zvec.CollectionSchema(name="my_vectors", vectors=zvec.VectorSchema("emb", zvec.DataType.VECTOR_FP32, 768))
-collection = zvec.create_and_open(path="./my_db", schema=schema)
+✨ 第二步：索引代码库
+./codebase-memory-mcp index --path /path/to/your-project
 
-🎮 第三步：搜索
-results = collection.query(zvec.VectorQuery("emb", vector=[0.1, 0.2, ...]))
-看看最相似的结果！`,
+🎮 第三步：连接 MCP 服务器
+在 Claude Code 或其他 MCP 客户端中配置，现在 AI 能瞬间理解你的整个项目了！`,
     difficulty: "入门",
     estimatedTime: "10分钟"
   },
   {
     id: 4,
-    name: "NocoBase",
-    fullName: "nocobase/nocobase",
-    description: "AI + 低代码平台：用 AI Agent 自动搭建业务系统，所见即所得的界面编辑器",
-    stars: 18200,
-    language: "TypeScript",
-    color: "#3178C6",
-    author: "nocobase",
-    '通俗讲解': '想用 AI 自动搭建企业管理系统？NocoBase 就是答案！你告诉 AI "帮我做一个CRM系统"，它就能自动生成数据库、页面、工作流。普通人也能通过拖拽界面修改。支持 Claude Code、Cursor 等 AI 编程工具直接操作。今天涨了 118 颗星，低代码+AI 的代表作。',
-    tutorial: `🎯 今天我们要用 AI 自动搭建业务系统！
+    name: "OpenMontage",
+    fullName: "calesthio/OpenMontage",
+    description: "全球首个开源 AI 视频制作系统：500+ Agent 技能，12条管线，把 AI 编程助手变成完整视频工作室",
+    stars: 5212,
+    language: "Python",
+    color: "#3572A5",
+    author: "calesthio",
+    '通俗讲解': '想自己做 AI 视频？这个就是"AI 视频工厂"！500+ 个 AI 技能，12 条自动化管线——从脚本、配音、画面到剪辑，AI 全自动搞定。把你现有的 AI 编程助手变成视频工作室！今天涨了 71 颗星，短视频创作者的最强武器。',
+    tutorial: `🎯 今天我们要搭建"AI 视频工厂"！
 
-📦 第一步：安装 CLI
-npm install -g @nocobase/cli@beta
+📦 第一步：克隆项目
+git clone https://github.com/calesthio/OpenMontage.git
+cd OpenMontage
 
-✨ 第二步：初始化项目
-mkdir my-app && cd my-app
-nb init --ui
+✨ 第二步：安装依赖
+pip install -r requirements.txt
 
-🎮 第三步：让 AI 帮你搭建
-打开 Codex/Claude Code，在当前目录运行，AI 会自动理解 NocoBase 的架构并开始搭建！`,
-    difficulty: "入门",
-    estimatedTime: "15分钟"
+🎮 第三步：生成你的第一个视频
+python generate.py --script "你的视频脚本"
+AI 会自动生成配音、画面、字幕，一条龙搞定！`,
+    difficulty: "进阶",
+    estimatedTime: "30分钟"
   },
   {
     id: 5,
-    name: "Meshery",
+    name: "continue",
+    fullName: "continuedev/continue",
+    description: "开源 AI 编程 Agent：理解你的代码库，在 IDE 中直接对话、生成代码、调试，开发者必备",
+    stars: 33857,
+    language: "TypeScript",
+    color: "#3572A5",
+    author: "continuedev",
+    '通俗讲解': 'VS Code / Cursor 里最好的开源 AI 编程助手！它不像 Copilot 那样只是猜代码，而是真正理解你的整个项目。你可以直接问它"这个函数怎么工作的？"、"帮我重构这段代码"，它真的能看懂并执行。今天涨了 38 颗星，稳居 AI 编程工具前三。',
+    tutorial: `🎯 今天我们要安装"AI 编程搭档"！
+
+📦 第一步：安装 VS Code 扩展
+在 VS Code 扩展市场搜索 "Continue"，一键安装
+
+✨ 第二步：配置 AI 模型
+支持 Claude、GPT-4、本地 LLM 等多种模型，按需选择
+
+🎮 第三步：开始对话
+在 VS Code 里打开 /chat，用自然语言描述你想做什么，AI 直接帮你写代码！`,
+    difficulty: "入门",
+    estimatedTime: "5分钟"
+  },
+  {
+    id: 6,
+    name: "rlm",
+    fullName: "alexzhang13/rlm",
+    description: "递归语言模型通用推理库：支持多种沙箱环境，即插即用，灵活调用 LLM",
+    stars: 4890,
+    language: "Python",
+    color: "#3572A5",
+    author: "alexzhang13",
+    '通俗讲解': '想让 LLM 自己调用自己？rlm 是一个"递归语言模型"推理库——它让 AI 可以在推理过程中反复"思考-调用-再思考"。就像一个学霸做数学题，做不出来就回退一步重新想。支持各种沙箱环境，即插即用。今天涨了 37 颗星，复杂推理任务的秘密武器。',
+    tutorial: `🎯 今天我们要让 AI "反复思考"！
+
+📦 第一步：安装
+pip install rlm
+
+✨ 第二步：简单推理
+from rlm import RecursiveLM
+agent = RecursiveLM(model="gpt-4")
+result = agent.reason("解决一个复杂的逻辑推理问题")
+
+🎮 第三步：自定义沙箱
+支持 Docker、Jupyter Notebook 等多种沙箱，AI 可以在安全环境中运行代码来辅助推理！`,
+    difficulty: "进阶",
+    estimatedTime: "15分钟"
+  },
+  {
+    id: 7,
+    name: "superpowers",
+    fullName: "obra/superpowers",
+    description: "Agentic 技能框架：一套真正能用的 AI Agent 软件开发方法论，让 Agent 拥有自主能力",
+    stars: 4200,
+    language: "Python",
+    color: "#3572A5",
+    author: "obra",
+    '通俗讲解': '市面上 AI Agent 框架这么多，但真正好用的不多。superpowers 是一套"Agent 技能框架"——不是代码库，而是一种方法论，教你怎么让 AI Agent 真正具备自主能力。从工具调用、记忆管理到任务规划，一站式搞定。今天刚上 Trending，增长势头很猛！',
+    tutorial: `🎯 今天我们要学习"Agent 技能框架"！
+
+📦 第一步：阅读文档
+打开 https://github.com/obra/superpowers 阅读 README 和方法论说明
+
+✨ 第二步：理解核心概念
+超链接 → 技能注册 → Agent 编排 → 自主决策
+
+🎮 第三步：在自己的项目中集成
+参考示例代码，把这套方法论应用到你的 AI Agent 项目中！`,
+    difficulty: "进阶",
+    estimatedTime: "20分钟"
+  },
+  {
+    id: 8,
+    name: "timesfm",
+    fullName: "google-research/timesfm",
+    description: "Google 时间序列基础模型：预训练的时间序列预测模型，覆盖金融、气象、销量等多领域",
+    stars: 8500,
+    language: "Python",
+    color: "#3572A5",
+    author: "google-research",
+    '通俗讲解': 'Google 搞了个"时间预测神器"！不管你是预测股票走势、天气变化、还是电商销量，这个模型都能帮你搞定。它是预训练过的——不需要重新训练，直接用就行。今天涨了 92 颗星，金融分析、供应链预测必备。',
+    tutorial: `🎯 今天我们要搭建"时间预测引擎"！
+
+📦 第一步：安装
+pip install timesfm
+
+✨ 第二步：加载预训练模型
+import timesfm
+tfm = timesfm.TimesFM(context_length=512, horizon_length=128)
+tfm.load_from_checkpoint(checkpoint_path="path/to/checkpoint")
+
+🎮 第三步：预测
+predictions = tfm.forecast(input_series)
+看看 AI 预测的未来数据！`,
+    difficulty: "进阶",
+    estimatedTime: "20分钟"
+  },
+  {
+    id: 9,
+    name: "meshery",
     fullName: "meshery/meshery",
-    description: "CNCF 云原生管理平台：AI 驱动的 Kubernetes 可视化运维，380+ 集成",
-    stars: 10817,
+    description: "CNCF 云原生管理平台：AI 驱动的 K8s 可视化运维，380+ 云原生工具集成",
+    stars: 10991,
     language: "TypeScript",
     color: "#3178C6",
     author: "meshery",
-    '通俗讲解': '公司有几十个 Kubernetes 集群管不过来？Meshery 就是你的"云原生指挥中心"！它能统一管理 K8s、服务网格、多云环境，还能用 AI 帮你自动优化配置。支持 380+ 种云原生工具的集成。今天涨了 229 颗星，DevOps 团队的必备工具。',
+    '通俗讲解': '公司有几十个 Kubernetes 集群管不过来？Meshery 就是你的"云原生指挥中心"！它用 AI 帮你自动优化 K8s 配置，统一管理 380+ 种云原生工具。今天涨了 199 颗星，DevOps 团队的必备神器。',
     tutorial: `🎯 今天我们要搭建"云原生指挥中心"！
 
 📦 第一步：一键安装
@@ -177,128 +271,34 @@ curl -L https://meshery.io/install | bash
 ✨ 第二步：启动服务
 mesheryctl system start
 
-🎮 第三步：连接你的集群
-在浏览器打开 Meshery Dashboard，连接你的 Kubernetes 集群，看看 AI 怎么帮你优化！`,
+🎮 第三步：连接 Kubernetes 集群
+浏览器打开 Dashboard，连上你的 K8s 集群，看看 AI 怎么帮你一键优化配置！`,
     difficulty: "进阶",
     estimatedTime: "20分钟"
   },
   {
-    id: 6,
-    name: "claude-code",
-    fullName: "anthropics/claude-code",
-    description: "Anthropic 官方 AI 编程助手：终端里的 Coding Agent，理解你的代码库，加速开发",
-    stars: 42500,
-    language: "TypeScript",
-    color: "#3572A5",
-    author: "anthropics",
-    '通俗讲解': 'Anthropic 官方的 AI 编程工具！直接在终端里跟它说话，它就能帮你写代码、改 bug、提交 git。理解你的整个项目结构，不是简单的代码补全，而是真正的"编程搭档"。支持 Claude Code 插件生态，今天依然稳居 AI 编程工具榜首。',
-    tutorial: `🎯 今天我们要安装"AI 编程搭档"！
-
-📦 第一步：安装（Mac/Linux）
-curl -fsSL https://claude.ai/install.sh | bash
-
-✨ 第二步：进入你的项目目录
-cd your-project
-
-🎮 第三步：开始对话
-输入 claude，然后用自然语言告诉它你想做什么——"帮我重构这个函数"、"写个单元测试"，它直接执行！`,
-    difficulty: "入门",
-    estimatedTime: "5分钟"
-  },
-  {
-    id: 7,
-    name: "server",
-    fullName: "music-assistant/server",
-    description: "开源 AI 音乐助手：连接 Spotify/Apple Music，智能推荐和管理你的音乐库",
-    stars: 2537,
-    language: "Python",
-    color: "#3572A5",
-    author: "marcelveldt",
-    '通俗讲解': '把你的所有音乐账号（Spotify、Apple Music、网易云…）统一管理到一个地方！AI 会根据你的听歌习惯智能推荐歌曲，还能控制各种智能音箱播放。支持树莓派、NAS 部署，今天涨了 157 颗星。音乐发烧友+AI 爱好者的完美结合。',
-    tutorial: `🎯 今天我们要搭建"AI 音乐管家"！
-
-📦 第一步：安装
-pip install music-assistant
-
-✨ 第二步：启动服务
-music-assistant --config /path/to/config
-
-🎮 第三步：连接音乐平台
-连接你的 Spotify 或 Apple Music 账号，AI 就开始学习你的音乐品味了！`,
-    difficulty: "入门",
-    estimatedTime: "15分钟"
-  },
-  {
-    id: 8,
-    name: "OpenWA",
-    fullName: "rmyndharis/OpenWA",
-    description: "自托管 WhatsApp API 网关：免费开源的 WhatsApp 机器人开发框架",
-    stars: 9027,
-    language: "TypeScript",
-    color: "#3178C6",
-    author: "rmyndharis",
-    '通俗讲解': '想给 WhatsApp 做个 AI 机器人？这个项目帮你免费搞定！它是一个自托管的 WhatsApp API 网关，你可以用它发送消息、接收消息、甚至接入 AI 做智能客服。今天涨了 185 颗星，适合想做 WhatsApp 自动化的人。',
-    tutorial: `🎯 今天我们要搭建"WhatsApp AI 机器人"！
-
-📦 第一步：克隆仓库
-git clone https://github.com/rmyndharis/OpenWA.git
-cd OpenWA
-
-✨ 第二步：安装依赖
-npm install
-
-🎮 第三步：运行服务
-npm start
-扫码登录后，你就能通过 API 发送和接收 WhatsApp 消息了！`,
-    difficulty: "入门",
-    estimatedTime: "15分钟"
-  },
-  {
-    id: 9,
+    id: 10,
     name: "iroh",
     fullName: "n0-computer/iroh",
-    description: "模块化网络协议栈：IP 地址会失效？用密钥拨号！Rust 编写的下一代 P2P 通信方案",
-    stars: 9225,
+    description: "模块化网络协议栈：用密钥替代 IP 地址的 P2P 通信方案，Rust 编写，性能怪兽",
+    stars: 9604,
     language: "Rust",
     color: "#dea584",
     author: "n0-computer",
-    '通俗讲解': '传统的网络连接靠 IP 地址，但 IP 会变、会断。iroh 换了个思路——用"密钥"代替 IP 地址来建立连接，特别适合 P2P 场景。用 Rust 写的，速度飞快！今天暴涨 326 颗星，是分布式系统和 Web3 开发者的新宠。',
-    tutorial: `🎯 今天我们要学习"下一代网络协议"！
+    '通俗讲解': '传统的网络连接靠 IP 地址，但 IP 会变、会断。iroh 换了个思路——用"密钥"代替 IP 来建立 P2P 连接。虽然不算纯 AI 项目，但很多 AI Agent 架构用它来做去中心化的通信层。用 Rust 写的，速度飞快！今天暴涨 422 颗星。',
+    tutorial: `🎯 今天我们要学习"去中心化网络"！
 
 📦 第一步：了解项目
 打开 https://github.com/n0-computer/iroh 阅读 README
 
 ✨ 第二步：运行示例
 cargo run --example hello-world
-看看 P2P 连接是怎么建立的！
+看看 P2P 连接是怎么通过密钥建立的！
 
-🎮 第三步：深入学习
-iroh 的核心概念是"节点密钥"代替"IP地址"，理解了这一点你就入门了！`,
+🎮 第三步：理解核心概念
+iroh 的核心是"节点密钥"代替"IP地址"，理解了这一点你就入门了！`,
     difficulty: "进阶",
     estimatedTime: "20分钟"
-  },
-  {
-    id: 10,
-    name: "universal-android-debloater-next-generation",
-    fullName: "Universal-Debloater-Alliance/universal-android-debloater-next-generation",
-    description: "Android 去广告/隐私保护工具：Rust 编写的跨平台 ADB GUI，清理预装软件保护隐私",
-    stars: 7238,
-    language: "Rust",
-    color: "#dea584",
-    author: "Universal-Debloater-Alliance",
-    '通俗讲解': '手机里一堆删不掉的预装软件？这个工具帮你一键清理！用 Rust 写的，跨平台（Windows/Mac/Linux），通过 ADB 连接安卓手机，可以安全地卸载系统应用、关闭遥测、保护隐私。今天涨了 146 颗星，安卓玩家的必备工具。',
-    tutorial: `🎯 今天我们要给手机"大扫除"！
-
-📦 第一步：下载安装
-去 GitHub Releases 页面下载适合你系统的安装包
-
-✨ 第二步：开启手机 ADB 调试
-手机设置 → 开发者选项 → 开启 USB 调试
-
-🎮 第三步：连接并清理
-打开 UAD-NG，连接手机，勾选你想卸载的预装应用，一键清理！`,
-    difficulty: "入门",
-    estimatedTime: "10分钟"
   }
 ]
 
