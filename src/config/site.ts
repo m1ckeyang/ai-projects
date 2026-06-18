@@ -57,67 +57,18 @@ const generateDates = () => {
   return dates
 }
 
-// 2026年6月18日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
+// 2026年6月19日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
 const trendingProjects: Project[] = [
   {
     id: 1,
-    name: "Agent-Reach",
-    fullName: "Panniantong/Agent-Reach",
-    description: "给AI Agent装上眼睛：一个CLI工具让它能浏览Twitter、Reddit、YouTube、GitHub、B站、小红书——零API费用",
-    stars: 33053,
-    language: "Python",
-    color: "#3572A5",
-    author: "Panniantong",
-    '通俗讲解': '你的 AI 助手只会搜 Google？这个工具直接给它装上"眼睛"！一条命令行，AI 就能去 Twitter、Reddit、YouTube、GitHub、B站、小红书上看内容。重点是——零 API 费用，直接抓网页数据！今天暴涨 1,154 颗星，增长猛到离谱，AI Agent 信息获取的终极方案。',
-    tutorial: `🎯 今天我们要让 AI 看遍全世界！
-
-📦 第一步：安装
-pip install agent-reach
-
-✨ 第二步：简单查询
-agent-reach search --platform twitter --query "AI news"
-agent-reach search --platform bilibili --query "深度学习教程"
-
-🎮 第三步：集成到 Agent
-在 LangChain / AutoGen / CrewAI 中直接调用，AI Agent 就能自主浏览网页获取信息了！`,
-    difficulty: "入门",
-    estimatedTime: "10分钟"
-  },
-  {
-    id: 2,
-    name: "UI-TARS-desktop",
-    fullName: "bytedance/UI-TARS-desktop",
-    description: "字节跳动开源多模态 AI Agent 框架：连接前沿 AI 模型与 Agent 基础设施，让 AI 能操作桌面",
-    stars: 36673,
-    language: "TypeScript",
-    color: "#3572A5",
-    author: "bytedance",
-    '通俗讲解': '字节跳动搞了个大招！这个框架能让 AI 像人一样操作电脑——看到屏幕截图就能理解并执行操作。相当于给 AI 装上了"眼睛和手"，它可以看到你的桌面然后帮你点按钮、打字、移动鼠标。今天涨了 148 颗星，桌面自动化的新纪元。',
-    tutorial: `🎯 今天我们要搭建"AI 桌面助手"！
-
-📦 第一步：克隆项目
-git clone https://github.com/bytedance/UI-TARS-desktop.git
-cd UI-TARS-desktop
-
-✨ 第二步：安装依赖
-npm install
-
-🎮 第三步：运行
-npm start
-AI 就能通过截图理解你的屏幕并自动操作了！试试让它打开一个文件夹看看！`,
-    difficulty: "进阶",
-    estimatedTime: "20分钟"
-  },
-  {
-    id: 3,
     name: "codebase-memory-mcp",
     fullName: "DeusData/codebase-memory-mcp",
-    description: "高性能代码智能 MCP 服务器：把代码库索引成知识图谱，158种语言，毫秒级响应，零依赖",
-    stars: 5031,
+    description: "高性能代码智能 MCP 服务器：把代码库索引成知识图谱，158种语言，毫秒级响应，零依赖，今天暴涨 2,308 颗星",
+    stars: 6892,
     language: "C",
     color: "#dea584",
     author: "DeusData",
-    '通俗讲解': '给 AI 编程工具装上"超级大脑"！这个工具把你的整个代码库变成知识图谱，AI 提问时毫秒级回答。支持 158 种编程语言，而且是一个独立的二进制文件——不用装任何依赖！今天暴涨 718 颗星，Claude Code、Cursor 等编程 AI 的神器搭档。',
+    '通俗讲解': '给你的 AI 编程助手装上"超级大脑"！这个工具把你整个代码库变成知识图谱，AI 提问时毫秒级回答。支持 158 种编程语言，而且是独立二进制文件——不用装任何依赖！今天暴涨 2,308 颗星，增长猛到离谱，Claude Code、Cursor 等编程 AI 的神器搭档。',
     tutorial: `🎯 今天我们要给 AI 编程工具装上"超级大脑"！
 
 📦 第一步：下载二进制
@@ -132,98 +83,152 @@ AI 就能通过截图理解你的屏幕并自动操作了！试试让它打开�
     estimatedTime: "10分钟"
   },
   {
-    id: 4,
-    name: "OpenMontage",
-    fullName: "calesthio/OpenMontage",
-    description: "全球首个开源 AI 视频制作系统：500+ Agent 技能，12条管线，把 AI 编程助手变成完整视频工作室",
-    stars: 5212,
-    language: "Python",
-    color: "#3572A5",
-    author: "calesthio",
-    '通俗讲解': '想自己做 AI 视频？这个就是"AI 视频工厂"！500+ 个 AI 技能，12 条自动化管线——从脚本、配音、画面到剪辑，AI 全自动搞定。把你现有的 AI 编程助手变成视频工作室！今天涨了 71 颗星，短视频创作者的最强武器。',
-    tutorial: `🎯 今天我们要搭建"AI 视频工厂"！
-
-📦 第一步：克隆项目
-git clone https://github.com/calesthio/OpenMontage.git
-cd OpenMontage
-
-✨ 第二步：安装依赖
-pip install -r requirements.txt
-
-🎮 第三步：生成你的第一个视频
-python generate.py --script "你的视频脚本"
-AI 会自动生成配音、画面、字幕，一条龙搞定！`,
-    difficulty: "进阶",
-    estimatedTime: "30分钟"
-  },
-  {
-    id: 5,
-    name: "continue",
-    fullName: "continuedev/continue",
-    description: "开源 AI 编程 Agent：理解你的代码库，在 IDE 中直接对话、生成代码、调试，开发者必备",
-    stars: 33857,
+    id: 2,
+    name: "kilocode",
+    fullName: "Kilo-Org/kilocode",
+    description: "Kilo 是全栈 AI 编程平台：最受欢迎的开源编程 Agent，VS Code / JetBrains / CLI 全覆盖，今天暴涨 1,339 颗星",
+    stars: 21986,
     language: "TypeScript",
     color: "#3572A5",
-    author: "continuedev",
-    '通俗讲解': 'VS Code / Cursor 里最好的开源 AI 编程助手！它不像 Copilot 那样只是猜代码，而是真正理解你的整个项目。你可以直接问它"这个函数怎么工作的？"、"帮我重构这段代码"，它真的能看懂并执行。今天涨了 38 颗星，稳居 AI 编程工具前三。',
+    author: "Kilo-Org",
+    '通俗讲解': '目前最火的开源 AI 编程助手！它在 VS Code、JetBrains 和命令行里都能用，像一个真正的编程搭档——你给它任务，它就自己搞定。今天暴涨 1,339 颗星，稳居开源编程 Agent 第一名！',
     tutorial: `🎯 今天我们要安装"AI 编程搭档"！
 
 📦 第一步：安装 VS Code 扩展
-在 VS Code 扩展市场搜索 "Continue"，一键安装
+在 VS Code 扩展市场搜索 "Kilo Code"，一键安装
 
 ✨ 第二步：配置 AI 模型
-支持 Claude、GPT-4、本地 LLM 等多种模型，按需选择
+支持 Claude、GPT 等多种模型，按需选择
 
 🎮 第三步：开始对话
-在 VS Code 里打开 /chat，用自然语言描述你想做什么，AI 直接帮你写代码！`,
+在编辑器里用自然语言描述你想做什么，AI 直接帮你写代码！`,
     difficulty: "入门",
     estimatedTime: "5分钟"
   },
   {
-    id: 6,
-    name: "rlm",
-    fullName: "alexzhang13/rlm",
-    description: "递归语言模型通用推理库：支持多种沙箱环境，即插即用，灵活调用 LLM",
-    stars: 4890,
-    language: "Python",
-    color: "#3572A5",
-    author: "alexzhang13",
-    '通俗讲解': '想让 LLM 自己调用自己？rlm 是一个"递归语言模型"推理库——它让 AI 可以在推理过程中反复"思考-调用-再思考"。就像一个学霸做数学题，做不出来就回退一步重新想。支持各种沙箱环境，即插即用。今天涨了 37 颗星，复杂推理任务的秘密武器。',
-    tutorial: `🎯 今天我们要让 AI "反复思考"！
+    id: 3,
+    name: "zvec",
+    fullName: "alibaba/zvec",
+    description: "阿里巴巴开源的超轻量级向量数据库：嵌入式、毫秒级搜索十亿级向量，今天暴涨 344 颗星",
+    stars: 11183,
+    language: "C++",
+    color: "#dea584",
+    author: "alibaba",
+    '通俗讲解': '阿里搞了个"AI 记忆引擎"！向量数据库是 AI 记住东西的关键技术——比如你的 RAG 系统、语义搜索都靠它。zvec 超快超轻量，不需要额外服务器，直接嵌入到你的程序里。今天暴涨 344 颗星，做 AI 应用的必备组件。',
+    tutorial: `🎯 今天我们要搭建"AI 记忆引擎"！
 
 📦 第一步：安装
-pip install rlm
+pip install zvec  # Python SDK
+npm install @zvec/zvec  # Node.js SDK
 
-✨ 第二步：简单推理
-from rlm import RecursiveLM
-agent = RecursiveLM(model="gpt-4")
-result = agent.reason("解决一个复杂的逻辑推理问题")
+✨ 第二步：创建向量数据库
+import zvec
+db = zvec.VectorDatabase(path="./my_db")
+db.add_vectors(embeddings, metadata)
 
-🎮 第三步：自定义沙箱
-支持 Docker、Jupyter Notebook 等多种沙箱，AI 可以在安全环境中运行代码来辅助推理！`,
+🎮 第三步：搜索
+results = db.search(query_vector, top_k=10)
+看看 AI 是怎么"记住"和"回忆"信息的！`,
+    difficulty: "入门",
+    estimatedTime: "10分钟"
+  },
+  {
+    id: 4,
+    name: "GLM-5",
+    fullName: "zai-org/GLM-5",
+    description: "智谱 GLM-5 系列模型：从 Vibe Coding 到 Agentic Engineering，编程能力开源最强，今天新增 286 颗星",
+    stars: 4063,
+    language: "",
+    color: "#3572A5",
+    author: "zai-org",
+    '通俗讲解': '智谱的 GLM-5 系列大模型，编程能力直接拉满！在 SWE-bench Pro 上超过了大部分闭源模型，还能处理 100 万 token 的超长上下文——相当于一次性读完几百本书。今天新增 286 颗星，做 AI 编程的终极武器。',
+    tutorial: `🎯 今天我们要体验"AI 编程大师"！
+
+📦 第一步：获取 API Key
+去 Z.ai 平台注册并获取 API Key
+
+✨ 第二步：调用 GLM-5
+from openai import OpenAI
+client = OpenAI(base_url="https://open.bigmodel.cn/api/paas/v4/", api_key="your-key")
+response = client.chat.completions.create(
+    model="glm-5",
+    messages=[{"role": "user", "content": "帮我写一个快速排序"}]
+)
+
+🎮 第三步：感受编程能力
+试试让它帮你重构复杂项目、调试 Bug，看看 AI 的编程水平！`,
+    difficulty: "入门",
+    estimatedTime: "10分钟"
+  },
+  {
+    id: 5,
+    name: "flue",
+    fullName: "withastro/flue",
+    description: "沙盒 Agent 框架：给 AI Agent 提供完整的 TypeScript 运行时环境，支持会话、工具、技能、文件系统隔离",
+    stars: 5457,
+    language: "TypeScript",
+    color: "#3572A5",
+    author: "withastro",
+    '通俗讲解': 'Astronomy 团队搞的 AI Agent 框架！它不只是让 AI 回答问题，而是给 AI 一个完整的"工作环境"——有会话管理、工具调用、技能加载，还有安全的沙盒环境。就像给 AI 配了一个带防护栏的工作台。今天新增 164 颗星，开发 AI Agent 的首选框架。',
+    tutorial: `🎯 今天我们要搭建"AI Agent 工作台"！
+
+📦 第一步：初始化项目
+npm create flue@latest my-agent
+cd my-agent
+
+✨ 第二步：创建你的第一个 Agent
+按照模板配置 model、tools、skills
+
+🎮 第三步：运行 Agent
+npm run dev
+看看 AI 在你的沙盒里自主完成任务！`,
     difficulty: "进阶",
-    estimatedTime: "15分钟"
+    estimatedTime: "20分钟"
+  },
+  {
+    id: 6,
+    name: "Hyper-Extract",
+    fullName: "yifanfeng97/Hyper-Extract",
+    description: "LLM 驱动的知识提取工具：一行命令把非结构化文档变成知识图谱、超图、时空图，今天新增 124 颗星",
+    stars: 1706,
+    language: "Python",
+    color: "#3572A5",
+    author: "yifanfeng97",
+    '通俗讲解': '读文档读到头疼？这个工具一行命令搞定！你把论文、财报、合同丢进去，它能自动提取出知识图谱、实体关系、甚至时空信息。支持 80+ 种模板，覆盖金融、法律、医疗等各个领域。今天新增 124 颗星，知识工作者的效率神器。',
+    tutorial: `🎯 今天我们要让 AI 帮我们"读懂"文档！
+
+📦 第一步：安装
+pip install hyperextract
+
+✨ 第二步：解析论文
+he parse paper.pdf -t general/academic_graph -o ./paper_kb/
+
+🎮 第三步：查询知识
+he search ./paper_kb/ "这篇论文的核心贡献是什么？"
+看看 AI 是怎么从一堆文字里提炼知识的！`,
+    difficulty: "入门",
+    estimatedTime: "10分钟"
   },
   {
     id: 7,
     name: "superpowers",
     fullName: "obra/superpowers",
-    description: "Agentic 技能框架：一套真正能用的 AI Agent 软件开发方法论，让 Agent 拥有自主能力",
+    description: "Agentic 技能框架：一套让 AI 编程 Agent 真正具备自主开发能力的软件方法论，支持 Claude Code、Cursor 等主流工具",
     stars: 4200,
-    language: "Python",
+    language: "",
     color: "#3572A5",
     author: "obra",
-    '通俗讲解': '市面上 AI Agent 框架这么多，但真正好用的不多。superpowers 是一套"Agent 技能框架"——不是代码库，而是一种方法论，教你怎么让 AI Agent 真正具备自主能力。从工具调用、记忆管理到任务规划，一站式搞定。今天刚上 Trending，增长势头很猛！',
-    tutorial: `🎯 今天我们要学习"Agent 技能框架"！
+    '通俗讲解': '市面上的 AI 编程工具这么多，但大多只是"猜代码"。superpowers 是一套"Agent 技能框架"——让你的 AI Agent 像真正的工程师一样工作：先理解需求、制定计划、写测试、再编码。支持 Claude Code、Cursor、Gemini CLI 等 10+ 工具。今天刚上 Trending，增长势头很猛！',
+    tutorial: `🎯 今天我们要让 AI Agent 变成"高级工程师"！
 
-📦 第一步：阅读文档
-打开 https://github.com/obra/superpowers 阅读 README 和方法论说明
+📦 第一步：安装 Superpowers
+按照 GitHub 仓库的说明安装到你的 AI 编程工具中
 
-✨ 第二步：理解核心概念
-超链接 → 技能注册 → Agent 编排 → 自主决策
+✨ 第二步：理解核心流程
+需求分析 → 规格说明 → 实施计划 → 子 Agent 驱动开发
 
-🎮 第三步：在自己的项目中集成
-参考示例代码，把这套方法论应用到你的 AI Agent 项目中！`,
+🎮 第三步：在自己的项目中试用
+告诉 AI 你想做什么，看看它如何像真正的工程师一样规划和执行！`,
     difficulty: "进阶",
     estimatedTime: "20分钟"
   },
@@ -231,12 +236,12 @@ result = agent.reason("解决一个复杂的逻辑推理问题")
     id: 8,
     name: "timesfm",
     fullName: "google-research/timesfm",
-    description: "Google 时间序列基础模型：预训练的时间序列预测模型，覆盖金融、气象、销量等多领域",
+    description: "Google 时间序列基础模型：预训练的预测模型，覆盖金融、气象、销量等多领域，已集成到 BigQuery ML 和 Google Sheets",
     stars: 8500,
     language: "Python",
     color: "#3572A5",
     author: "google-research",
-    '通俗讲解': 'Google 搞了个"时间预测神器"！不管你是预测股票走势、天气变化、还是电商销量，这个模型都能帮你搞定。它是预训练过的——不需要重新训练，直接用就行。今天涨了 92 颗星，金融分析、供应链预测必备。',
+    '通俗讲解': 'Google 搞了个"时间预测神器"！不管你是预测股票走势、天气变化、还是电商销量，这个模型都能帮你搞定。它是预训练过的——不需要重新训练，直接用就行。而且已经集成到了 BigQuery ML 和 Google Sheets 里，连表格都能预测！今天新增 92 颗星。',
     tutorial: `🎯 今天我们要搭建"时间预测引擎"！
 
 📦 第一步：安装
@@ -255,50 +260,52 @@ predictions = tfm.forecast(input_series)
   },
   {
     id: 9,
-    name: "meshery",
-    fullName: "meshery/meshery",
-    description: "CNCF 云原生管理平台：AI 驱动的 K8s 可视化运维，380+ 云原生工具集成",
-    stars: 10991,
-    language: "TypeScript",
-    color: "#3178C6",
-    author: "meshery",
-    '通俗讲解': '公司有几十个 Kubernetes 集群管不过来？Meshery 就是你的"云原生指挥中心"！它用 AI 帮你自动优化 K8s 配置，统一管理 380+ 种云原生工具。今天涨了 199 颗星，DevOps 团队的必备神器。',
-    tutorial: `🎯 今天我们要搭建"云原生指挥中心"！
+    name: "LTX-2",
+    fullName: "Lightricks/LTX-2",
+    description: "LTX-2 音视频生成模型：首个 DiT 架构的多模态基础模型，同步音视频生成，支持 LoRA 微调",
+    stars: 7470,
+    language: "Python",
+    color: "#3572A5",
+    author: "Lightricks",
+    '通俗讲解': 'Lightricks 搞了个"AI 影视工厂"！LTX-2 是一个能同时生成音视频的 AI 模型——你给它一段文字描述，它就能生成带声音的视频。还支持 LoRA 微调，你可以用自己的数据训练专属风格。今天新增 47 颗星，视频创作者的终极武器。',
+    tutorial: `🎯 今天我们要搭建"AI 影视工厂"！
 
-📦 第一步：一键安装
-curl -L https://meshery.io/install | bash
+📦 第一步：克隆项目
+git clone https://github.com/Lightricks/LTX-2.git
+cd LTX-2
 
-✨ 第二步：启动服务
-mesheryctl system start
+✨ 第二步：安装依赖
+uv sync --frozen
+source .venv/bin/activate
 
-🎮 第三步：连接 Kubernetes 集群
-浏览器打开 Dashboard，连上你的 K8s 集群，看看 AI 怎么帮你一键优化配置！`,
+🎮 第三步：生成你的第一个视频
+按照仓库示例，输入文字描述，看看 AI 生成的视频！`,
     difficulty: "进阶",
-    estimatedTime: "20分钟"
+    estimatedTime: "30分钟"
   },
   {
     id: 10,
-    name: "iroh",
-    fullName: "n0-computer/iroh",
-    description: "模块化网络协议栈：用密钥替代 IP 地址的 P2P 通信方案，Rust 编写，性能怪兽",
-    stars: 9604,
-    language: "Rust",
-    color: "#dea584",
-    author: "n0-computer",
-    '通俗讲解': '传统的网络连接靠 IP 地址，但 IP 会变、会断。iroh 换了个思路——用"密钥"代替 IP 来建立 P2P 连接。虽然不算纯 AI 项目，但很多 AI Agent 架构用它来做去中心化的通信层。用 Rust 写的，速度飞快！今天暴涨 422 颗星。',
-    tutorial: `🎯 今天我们要学习"去中心化网络"！
+    name: "LibreTranslate",
+    fullName: "LibreTranslate/LibreTranslate",
+    description: "免费开源机器翻译 API：自托管、离线可用，基于 Argos Translate 引擎，不依赖任何商业服务",
+    stars: 3500,
+    language: "Python",
+    color: "#3572A5",
+    author: "LibreTranslate",
+    '通俗讲解': '不想用 Google 翻译或 Azure 翻译？LibreTranslate 是你的最佳选择！完全开源、可以自己部署、支持离线翻译。底层用的是 Argos Translate 引擎，隐私安全有保障。今天也在 Trending 榜上，自建翻译服务的首选。',
+    tutorial: `🎯 今天我们要搭建"私人翻译引擎"！
 
-📦 第一步：了解项目
-打开 https://github.com/n0-computer/iroh 阅读 README
+📦 第一步：一键部署
+docker run -p 5000:5000 libretranslate/libretranslate
 
-✨ 第二步：运行示例
-cargo run --example hello-world
-看看 P2P 连接是怎么通过密钥建立的！
+✨ 第二步：测试翻译
+curl -X POST http://localhost:5000/translate \\
+  -d '{"q":"Hello world","source":"en","target":"zh"}'
 
-🎮 第三步：理解核心概念
-iroh 的核心是"节点密钥"代替"IP地址"，理解了这一点你就入门了！`,
-    difficulty: "进阶",
-    estimatedTime: "20分钟"
+🎮 第三步：集成到你的应用
+在代码中调用 API，你的翻译服务完全掌握在自己手里！`,
+    difficulty: "入门",
+    estimatedTime: "10分钟"
   }
 ]
 
