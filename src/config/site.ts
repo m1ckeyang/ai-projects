@@ -64,11 +64,11 @@ const trendingProjects: Project[] = [
     name: "headroom",
     fullName: "chopratejas/headroom",
     description: "压缩工具输出、日志、文件和 RAG 块后再送入 LLM，减少 60-95% token 消耗，同时保持答案质量。Library、Proxy、MCP Server 三种形态",
-    stars: 38263,
+    stars: 41568,
     language: "Python",
     color: "#3572A5",
     author: "chopratejas",
-    '通俗讲解': '给你的 AI 聊天省"脑细胞"！LLM 是按字数收钱的——这个工具在你把内容发给 AI 之前，先压缩一遍，去掉废话，保留精华。结果就是：少花 token，同样答得好。支持库、代理、MCP Server 三种方式，今天暴涨 3,938 颗星，爆涨到 Trending 第一！',
+    '通俗讲解': '给你的 AI 聊天省"脑细胞"！LLM 是按字数收钱的——这个工具在你把内容发给 AI 之前，先压缩一遍，去掉废话，保留精华。结果就是：少花 token，同样答得好。支持库、代理、MCP Server 三种方式，今天暴涨 3,786 颗星，爆涨到 Trending 第一！',
     tutorial: `🎯 今天我们要让 AI 对话"瘦身"！
 
 📦 第一步：安装
@@ -85,40 +85,14 @@ headroom compress --input your_log.txt
   },
   {
     id: 2,
-    name: "timesfm",
-    fullName: "google-research/timesfm",
-    description: "Google 时间序列基础模型 TimesFM：预训练的预测模型，覆盖金融、气象、销量等多领域，已集成到 BigQuery ML 和 Google Sheets",
-    stars: 24030,
-    language: "Python",
-    color: "#3572A5",
-    author: "google-research",
-    '通俗讲解': 'Google 搞了个"时间预测神器"！不管你是预测股票走势、天气变化、还是电商销量，这个模型都能帮你搞定。它是预训练过的——不需要重新训练，直接用就行。而且已经集成到了 BigQuery ML 和 Google Sheets 里，连表格都能预测！今天暴涨 1,516 颗星。',
-    tutorial: `🎯 今天我们要搭建"时间预测引擎"！
-
-📦 第一步：安装
-pip install timesfm
-
-✨ 第二步：加载预训练模型
-import timesfm
-tfm = timesfm.TimesFM(context_length=512, horizon_length=128)
-tfm.load_from_checkpoint(checkpoint_path="path/to/checkpoint")
-
-🎮 第三步：预测
-predictions = tfm.forecast(input_series)
-看看 AI 预测的未来数据！`,
-    difficulty: "进阶",
-    estimatedTime: "20分钟"
-  },
-  {
-    id: 3,
     name: "codebase-memory-mcp",
     fullName: "DeusData/codebase-memory-mcp",
     description: "高性能代码智能 MCP 服务器：把代码库索引成知识图谱，158种语言，毫秒级响应，零依赖，单文件二进制",
-    stars: 8071,
+    stars: 9210,
     language: "C",
     color: "#dea584",
     author: "DeusData",
-    '通俗讲解': '给你的 AI 编程助手装上"超级大脑"！这个工具把你整个代码库变成知识图谱，AI 提问时毫秒级回答。支持 158 种编程语言，而且是独立二进制文件——不用装任何依赖！今天暴涨 1,055 颗星，Claude Code、Cursor 等编程 AI 的神器搭档。',
+    '通俗讲解': '给你的 AI 编程助手装上"超级大脑"！这个工具把你整个代码库变成知识图谱，AI 提问时毫秒级回答。支持 158 种编程语言，而且是独立二进制文件——不用装任何依赖！今天暴涨 1,267 颗星，Claude Code、Cursor 等编程 AI 的神器搭档。',
     tutorial: `🎯 今天我们要给 AI 编程工具装上"超级大脑"！
 
 📦 第一步：下载二进制
@@ -133,40 +107,15 @@ predictions = tfm.forecast(input_series)
     estimatedTime: "10分钟"
   },
   {
-    id: 4,
-    name: "LTX-2",
-    fullName: "Lightricks/LTX-2",
-    description: "LTX-2 音视频生成模型：首个 DiT 架构的多模态基础模型，同步音视频生成，支持 LoRA 微调",
-    stars: 7649,
-    language: "Python",
-    color: "#3572A5",
-    author: "Lightricks",
-    '通俗讲解': 'Lightricks 搞了个"AI 影视工厂"！LTX-2 是一个能同时生成音视频的 AI 模型——你给它一段文字描述，它就能生成带声音的视频。还支持 LoRA 微调，你可以用自己的数据训练专属风格。今天新增 196 颗星，视频创作者的终极武器。',
-    tutorial: `🎯 今天我们要搭建"AI 影视工厂"！
-
-📦 第一步：克隆项目
-git clone https://github.com/Lightricks/LTX-2.git
-cd LTX-2
-
-✨ 第二步：安装依赖
-uv sync --frozen
-source .venv/bin/activate
-
-🎮 第三步：生成你的第一个视频
-按照仓库示例，输入文字描述，看看 AI 生成的视频！`,
-    difficulty: "进阶",
-    estimatedTime: "30分钟"
-  },
-  {
-    id: 5,
+    id: 3,
     name: "OpenMontage",
     fullName: "calesthio/OpenMontage",
     description: "全球首个开源 Agentic 视频制作系统：12 条管道、52 个工具、500+ Agent 技能，把你的 AI 编程助手变成完整视频工作室",
-    stars: 6194,
+    stars: 6946,
     language: "Python",
     color: "#3572A5",
     author: "calesthio",
-    '通俗讲解': '想让 AI 帮你做视频？OpenMontage 做到了！它把 AI 编程助手变成一个完整的视频制作工作室——有 12 条制作管道、52 个工具、500 多种技能。你只需要描述想要什么视频，AI 自动完成脚本、画面、配音、剪辑。今天新增 236 颗星，视频创作者的梦中情工。',
+    '通俗讲解': '想让 AI 帮你做视频？OpenMontage 做到了！它把 AI 编程助手变成一个完整的视频制作工作室——有 12 条制作管道、52 个工具、500 多种技能。你只需要描述想要什么视频，AI 自动完成脚本、画面、配音、剪辑。今天新增 677 颗星，视频创作者的梦中情工。',
     tutorial: `🎯 今天我们要搭建"AI 视频工作室"！
 
 📦 第一步：安装 OpenMontage
@@ -182,15 +131,61 @@ cd OpenMontage
     estimatedTime: "30分钟"
   },
   {
+    id: 4,
+    name: "palmier-pro",
+    fullName: "palmier-io/palmier-pro",
+    description: "专为 AI 打造的 macOS 视频编辑器：AI 驱动的剪辑、转场、特效，让视频创作像聊天一样简单",
+    stars: 3137,
+    language: "Swift",
+    color: "#3572A5",
+    author: "palmier-io",
+    '通俗讲解': 'macOS 上的"AI 视频剪辑神器"！传统视频编辑要学很多技巧，但这个工具用 AI 帮你搞定一切——你说"把这段剪短一点"，它自己就办了。支持 AI 转场、AI 特效、智能配音，让视频创作像聊天一样简单。今天暴涨 904 颗星，Mac 用户的福音！',
+    tutorial: `🎯 今天我们要体验"AI 视频剪辑"！
+
+📦 第一步：安装 Palmier Pro
+从 Mac App Store 或官网下载安装
+
+✨ 第二步：导入你的素材
+把视频、图片拖进编辑器
+
+🎮 第三步：用自然语言指挥 AI
+输入"帮我做个炫酷的开场"，AI 自动完成剪辑！`,
+    difficulty: "入门",
+    estimatedTime: "5分钟"
+  },
+  {
+    id: 5,
+    name: "kilocode",
+    fullName: "Kilo-Org/kilocode",
+    description: "Kilo 全栈 AI 编程平台：在 VS Code、JetBrains、CLI 中使用 500+ 模型进行编程，开源免费，支持多模型切换",
+    stars: 23295,
+    language: "TypeScript",
+    color: "#3572A5",
+    author: "Kilo-Org",
+    '通俗讲解': 'Kilo Code 是个"AI 编程全能王"！你可以在 VS Code、JetBrains 甚至命令行里用它，支持 500 多种 AI 模型随便换——GPT、Claude、Gemini 全都有。关键是开源免费，没有中间商赚差价。今天新增 470 颗星，程序员必备神器。',
+    tutorial: `🎯 今天我们要体验"AI 编程全能王"！
+
+📦 第一步：安装
+npm install -g @kilocode/cli
+
+✨ 第二步：启动 Kilo
+在任何项目目录下运行 kilo
+
+🎮 第三步：选择模型
+Kilo 支持 500+ 模型，你可以随时切换，看看哪个模型最适合你的项目！`,
+    difficulty: "入门",
+    estimatedTime: "10分钟"
+  },
+  {
     id: 6,
     name: "flue",
     fullName: "withastro/flue",
     description: "沙盒 Agent 框架：给 AI Agent 提供完整的 TypeScript 运行时环境，支持会话、工具、技能、文件系统隔离",
-    stars: 5796,
+    stars: 6058,
     language: "TypeScript",
     color: "#3572A5",
     author: "withastro",
-    '通俗讲解': 'Astronomy 团队搞的 AI Agent 框架！它不只是让 AI 回答问题，而是给 AI 一个完整的"工作环境"——有会话管理、工具调用、技能加载，还有安全的沙盒环境。就像给 AI 配了一个带防护栏的工作台。今天新增 305 颗星，开发 AI Agent 的首选框架。',
+    '通俗讲解': 'Astronomy 团队搞的 AI Agent 框架！它不只是让 AI 回答问题，而是给 AI 一个完整的"工作环境"——有会话管理、工具调用、技能加载，还有安全的沙盒环境。就像给 AI 配了一个带防护栏的工作台。今天新增 313 颗星，开发 AI Agent 的首选框架。',
     tutorial: `🎯 今天我们要搭建"AI Agent 工作台"！
 
 📦 第一步：初始化项目
@@ -208,104 +203,97 @@ npm run dev
   },
   {
     id: 7,
-    name: "GLM-5",
-    fullName: "zai-org/GLM-5",
-    description: "智谱 GLM-5 系列模型：从 Vibe Coding 到 Agentic Engineering，编程能力开源最强，支持百万 token 上下文",
-    stars: 4514,
-    language: "",
+    name: "voicebox",
+    fullName: "jamiepine/voicebox",
+    description: "开源 AI 语音工作室：克隆声音、语音合成、全局听写，23 种语言，7 个 TTS 引擎，本地运行完全隐私",
+    stars: 30959,
+    language: "TypeScript",
     color: "#3572A5",
-    author: "zai-org",
-    '通俗讲解': '智谱的 GLM-5 系列大模型，编程能力直接拉满！在 SWE-bench Pro 上超过了大部分闭源模型，还能处理 100 万 token 的超长上下文——相当于一次性读完几百本书。今天新增 478 颗星，做 AI 编程的终极武器。',
-    tutorial: `🎯 今天我们要体验"AI 编程大师"！
+    author: "jamiepine",
+    '通俗讲解': 'Voicebox 是个"AI 语音全能工作室"！它能克隆任何人的声音、用 23 种语言生成语音、甚至全局听写——按个快捷键就能说话打字。关键是全部本地运行，你的声音数据不会离开电脑。今天新增 140 颗星，替代 ElevenLabs 的最佳选择。',
+    tutorial: `🎯 今天我们要搭建"AI 语音工作室"！
 
-📦 第一步：获取 API Key
-去 Z.ai 平台注册并获取 API Key
+📦 第一步：下载 Voicebox
+去 voicebox.sh 下载对应系统的安装包
 
-✨ 第二步：调用 GLM-5
-from openai import OpenAI
-client = OpenAI(base_url="https://open.bigmodel.cn/api/paas/v4/", api_key="your-key")
-response = client.chat.completions.create(
-    model="glm-5",
-    messages=[{"role": "user", "content": "帮我写一个快速排序"}]
-)
+✨ 第二步：克隆你的声音
+录几秒自己的声音，Voicebox 就能克隆
 
-🎮 第三步：感受编程能力
-试试让它帮你重构复杂项目、调试 Bug，看看 AI 的编程水平！`,
+🎮 第三步：生成语音或全局听写
+试试用克隆的声音说一句话，或者按快捷键直接语音打字！`,
     difficulty: "入门",
     estimatedTime: "10分钟"
   },
   {
     id: 8,
-    name: "worldmonitor",
-    fullName: "koala73/worldmonitor",
-    description: "实时全球情报仪表盘：AI 驱动的新闻聚合、地缘政治监控和基础设施追踪，统一态势感知界面",
-    stars: 57148,
+    name: "twenty",
+    fullName: "twentyhq/twenty",
+    description: "开源 CRM，为 AI 而生：Salesforce 的免费替代品，内置 AI 功能，支持自动化客户管理",
+    stars: 50809,
     language: "TypeScript",
     color: "#3572A5",
-    author: "koala73",
-    '通俗讲解': '给世界装了个"AI 雷达"！这个工具用 AI 实时监控全球新闻、地缘政治事件和基础设施动态，把所有信息整合到一个仪表盘里。就像看新闻有了超级英雄视角——一眼看透全球局势。今天新增 300 颗星，适合关注国际形势的朋友。',
-    tutorial: `🎯 今天我们要搭建"全球情报站"！
+    author: "twentyhq",
+    '通俗讲解': 'Twenty 是个"AI 驱动的免费 CRM"！它是 Salesforce 的开源替代品，天生为 AI 设计——能自动分析客户数据、生成销售预测、智能推荐下一步行动。今天新增 140 颗星，创业公司和自由职业者的客户管理神器。',
+    tutorial: `🎯 今天我们要搭建"AI 客户管理系统"！
 
-📦 第一步：克隆项目
-git clone https://github.com/koala73/worldmonitor.git
-cd worldmonitor
+📦 第一步：部署 Twenty
+docker compose up -d  # 一键启动
 
-✨ 第二步：安装依赖
-npm install
+✨ 第二步：访问控制台
+打开浏览器访问 http://localhost:3000
 
-🎮 第三步：启动仪表盘
-npm run dev
-打开浏览器看看 AI 实时追踪的全球动态！`,
+🎮 第三步：体验 AI 功能
+导入你的客户数据，看看 AI 怎么帮你分析和管理！`,
     difficulty: "入门",
     estimatedTime: "15分钟"
   },
   {
     id: 9,
-    name: "palmier-pro",
-    fullName: "palmier-io/palmier-pro",
-    description: "专为 AI 打造的 macOS 视频编辑器：AI 驱动的剪辑、转场、特效，让视频创作像聊天一样简单",
-    stars: 1760,
-    language: "Swift",
+    name: "timesfm",
+    fullName: "google-research/timesfm",
+    description: "Google 时间序列基础模型 TimesFM 2.5：预训练预测模型，200M 参数，支持 16K 上下文，已集成 BigQuery ML 和 Google Sheets",
+    stars: 24475,
+    language: "Python",
     color: "#3572A5",
-    author: "palmier-io",
-    '通俗讲解': 'macOS 上的"AI 视频剪辑神器"！传统视频编辑要学很多技巧，但这个工具用 AI 帮你搞定一切——你说"把这段剪短一点"，它自己就办了。支持 AI 转场、AI 特效、智能配音，让视频创作像聊天一样简单。今天暴涨 749 颗星，Mac 用户的福音！',
-    tutorial: `🎯 今天我们要体验"AI 视频剪辑"！
+    author: "google-research",
+    '通俗讲解': 'Google 搞了个"时间预测神器"！不管你是预测股票走势、天气变化、还是电商销量，这个模型都能帮你搞定。最新版本 TimesFM 2.5 只用 2 亿参数（之前 5 亿），但支持 16 倍长的上下文，精度反而更高。已经集成到 BigQuery ML 和 Google Sheets 里了！',
+    tutorial: `🎯 今天我们要搭建"时间预测引擎"！
 
-📦 第一步：安装 Palmier Pro
-从 Mac App Store 或官网下载安装
+📦 第一步：安装
+pip install timesfm[torch]
 
-✨ 第二步：导入你的素材
-把视频、图片拖进编辑器
+✨ 第二步：加载预训练模型
+import timesfm
+model = timesfm.TimesFM_2p5_200M_torch.from_pretrained("google/timesfm-2.5-200m-pytorch")
 
-🎮 第三步：用自然语言指挥 AI
-输入"帮我做个炫酷的开场"，AI 自动完成剪辑！`,
-    difficulty: "入门",
-    estimatedTime: "5分钟"
+🎮 第三步：预测
+predictions = model.forecast(horizon=12, inputs=[your_data])
+看看 AI 预测的未来数据！`,
+    difficulty: "进阶",
+    estimatedTime: "20分钟"
   },
   {
     id: 10,
-    name: "agent-native",
-    fullName: "BuilderIO/agent-native",
-    description: "Agent-Native 应用框架：专门为 AI Agent 设计的开发框架，让应用原生支持 Agent 交互模式",
-    stars: 987,
-    language: "TypeScript",
-    color: "#3572A5",
-    author: "BuilderIO",
-    '通俗讲解': 'Builder.IO 团队搞的新框架——专门给 AI Agent 用的！以前我们写应用是给"人"用的，现在这个框架让应用天生就能和 AI Agent 对话。你的后端 API 可以直接被 Agent 调用，Agent 也能直接操作你的应用。今天新增 210 颗星，未来 AI 原生应用的必备框架。',
-    tutorial: `🎯 今天我们要搭建"AI 原生应用"！
+    name: "jcode",
+    fullName: "1jehuang/jcode",
+    description: "Coding Agent Harness：让 AI 编程 Agent 安全执行代码的工具箱，支持沙盒执行和权限控制",
+    stars: 7372,
+    language: "Rust",
+    color: "#dea584",
+    author: "1jehuang",
+    '通俗讲解': 'JCode 是给 AI 编程 Agent 配的"安全保险栓"！AI 写的代码直接运行太危险了——这个工具提供沙盒环境和权限控制，让 AI 可以在安全的环境下执行代码、调试程序。支持 Rust 编写的高性能执行引擎，今天新增 108 颗星，AI 编程安全必备。',
+    tutorial: `🎯 今天我们要搭建"AI 编程安全沙盒"！
 
-📦 第一步：初始化项目
-npm create agent-native@latest my-app
-cd my-app
+📦 第一步：安装 JCode
+cargo install jcode  # 或者从 Release 下载二进制
 
-✨ 第二步：定义你的 Agent 接口
-按照模板配置 API 端点和 Agent 交互逻辑
+✨ 第二步：配置沙盒环境
+按照 README 配置执行权限和安全策略
 
-🎮 第三步：运行并测试
-npm run dev
-看看 AI Agent 如何和你的应用无缝交互！`,
+🎮 第三步：让 AI 安全执行代码
+把 AI 生成的代码丢进沙盒，看看它在受限环境中能不能跑通！`,
     difficulty: "进阶",
-    estimatedTime: "20分钟"
+    estimatedTime: "15分钟"
   }
 ]
 
