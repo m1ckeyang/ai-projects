@@ -57,18 +57,18 @@ const generateDates = () => {
   return dates
 }
 
-// 2026年6月20日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
+// 2026年6月22日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
 const trendingProjects: Project[] = [
   {
     id: 1,
     name: "headroom",
     fullName: "chopratejas/headroom",
     description: "压缩工具输出、日志、文件和 RAG 块后再送入 LLM，减少 60-95% token 消耗，同时保持答案质量。Library、Proxy、MCP Server 三种形态",
-    stars: 41568,
+    stars: 44007,
     language: "Python",
     color: "#3572A5",
     author: "chopratejas",
-    '通俗讲解': '给你的 AI 聊天省"脑细胞"！LLM 是按字数收钱的——这个工具在你把内容发给 AI 之前，先压缩一遍，去掉废话，保留精华。结果就是：少花 token，同样答得好。支持库、代理、MCP Server 三种方式，今天暴涨 3,786 颗星，爆涨到 Trending 第一！',
+    '通俗讲解': '给你的 AI 聊天省"脑细胞"！LLM 是按字数收钱的——这个工具在你把内容发给 AI 之前，先压缩一遍，去掉废话，保留精华。结果就是：少花 token，同样答得好。支持库、代理、MCP Server 三种方式，今天暴涨 2,617 颗星，爆涨到 Trending 第一！',
     tutorial: `🎯 今天我们要让 AI 对话"瘦身"！
 
 📦 第一步：安装
@@ -85,14 +85,84 @@ headroom compress --input your_log.txt
   },
   {
     id: 2,
+    name: "Pake",
+    fullName: "tw93/Pake",
+    description: "一条命令把任何网页变成桌面应用：打包 Electron 桌面 App，支持 macOS / Windows / Linux，内置 AI 助手集成",
+    stars: 56029,
+    language: "Rust",
+    color: "#dea584",
+    author: "tw93",
+    '通俗讲解': '想把你常用的网页变成独立桌面软件？Pake 一行命令搞定！不管是 AI 聊天网页、在线文档、还是任何网站，它都能打包成原生桌面 App。今天暴涨 1,850 颗星，AI 工具快速部署的必备神器。',
+    tutorial: `🎯 今天我们要把网页变"桌面软件"！
+
+📦 第一步：安装 Pake
+npm install -g @tw93/pake-cli
+
+✨ 第二步：打包网页
+pake https://chat.openai.com -n "ChatGPT"
+
+🎮 第三步：运行桌面版
+双击生成的 App，享受离线可用的桌面版 AI 助手！`,
+    difficulty: "入门",
+    estimatedTime: "5分钟"
+  },
+  {
+    id: 3,
+    name: "skills",
+    fullName: "mattpocock/skills",
+    description: "真实工程师的 Claude 技能库：从 .claude 目录提取的结构化技能集合，覆盖编程、调试、架构等全方位场景",
+    stars: 139557,
+    language: "Shell",
+    color: "#3572A5",
+    author: "mattpocock",
+    '通俗讲解': '这是编程大神 Matt Pocock 把他用 Claude 写代码的"独门秘籍"开源了！里面全是实战技能——怎么写代码、怎么调试、怎么搭架构。今天暴涨 1,441 颗星，总星标突破 13 万，是目前 GitHub 上最火的 AI 编程技能库！',
+    tutorial: `🎯 今天我们要获取"AI 编程大师秘籍"！
+
+📦 第一步：克隆仓库
+git clone https://github.com/mattpocock/skills.git
+cd skills
+
+✨ 第二步：浏览技能
+看看每个 .md 文件里的技能描述，都是实战经验
+
+🎮 第三步：导入到你的 AI 助手
+把 skills 目录配置到你的 Claude Code / Cursor 等工具中，立刻提升编程效率！`,
+    difficulty: "入门",
+    estimatedTime: "5分钟"
+  },
+  {
+    id: 4,
+    name: "palmier-pro",
+    fullName: "palmier-io/palmier-pro",
+    description: "专为 AI 打造的 macOS 视频编辑器：AI 驱动的剪辑、转场、特效，让视频创作像聊天一样简单",
+    stars: 4875,
+    language: "Swift",
+    color: "#3572A5",
+    author: "palmier-io",
+    '通俗讲解': 'macOS 上的"AI 视频剪辑神器"！传统视频编辑要学很多技巧，但这个工具用 AI 帮你搞定一切——你说"把这段剪短一点"，它自己就办了。支持 AI 转场、AI 特效、智能配音，让视频创作像聊天一样简单。今天暴涨 1,829 颗星，Mac 用户的福音！',
+    tutorial: `🎯 今天我们要体验"AI 视频剪辑"！
+
+📦 第一步：安装 Palmier Pro
+从官网下载安装包
+
+✨ 第二步：导入你的素材
+把视频、图片拖进编辑器
+
+🎮 第三步：用自然语言指挥 AI
+输入"帮我做个炫酷的开场"，AI 自动完成剪辑！`,
+    difficulty: "入门",
+    estimatedTime: "5分钟"
+  },
+  {
+    id: 5,
     name: "codebase-memory-mcp",
     fullName: "DeusData/codebase-memory-mcp",
     description: "高性能代码智能 MCP 服务器：把代码库索引成知识图谱，158种语言，毫秒级响应，零依赖，单文件二进制",
-    stars: 9210,
+    stars: 10154,
     language: "C",
     color: "#dea584",
     author: "DeusData",
-    '通俗讲解': '给你的 AI 编程助手装上"超级大脑"！这个工具把你整个代码库变成知识图谱，AI 提问时毫秒级回答。支持 158 种编程语言，而且是独立二进制文件——不用装任何依赖！今天暴涨 1,267 颗星，Claude Code、Cursor 等编程 AI 的神器搭档。',
+    '通俗讲解': '给你的 AI 编程助手装上"超级大脑"！这个工具把你整个代码库变成知识图谱，AI 提问时毫秒级回答。支持 158 种编程语言，而且是独立二进制文件——不用装任何依赖！今天暴涨 1,029 颗星，Claude Code、Cursor 等编程 AI 的神器搭档。',
     tutorial: `🎯 今天我们要给 AI 编程工具装上"超级大脑"！
 
 📦 第一步：下载二进制
@@ -107,15 +177,15 @@ headroom compress --input your_log.txt
     estimatedTime: "10分钟"
   },
   {
-    id: 3,
+    id: 6,
     name: "OpenMontage",
     fullName: "calesthio/OpenMontage",
     description: "全球首个开源 Agentic 视频制作系统：12 条管道、52 个工具、500+ Agent 技能，把你的 AI 编程助手变成完整视频工作室",
-    stars: 6946,
+    stars: 8420,
     language: "Python",
     color: "#3572A5",
     author: "calesthio",
-    '通俗讲解': '想让 AI 帮你做视频？OpenMontage 做到了！它把 AI 编程助手变成一个完整的视频制作工作室——有 12 条制作管道、52 个工具、500 多种技能。你只需要描述想要什么视频，AI 自动完成脚本、画面、配音、剪辑。今天新增 677 颗星，视频创作者的梦中情工。',
+    '通俗讲解': '想让 AI 帮你做视频？OpenMontage 做到了！它把 AI 编程助手变成一个完整的视频制作工作室——有 12 条制作管道、52 个工具、500 多种技能。你只需要描述想要什么视频，AI 自动完成脚本、画面、配音、剪辑。今天暴涨 993 颗星，视频创作者的梦中情工。',
     tutorial: `🎯 今天我们要搭建"AI 视频工作室"！
 
 📦 第一步：安装 OpenMontage
@@ -131,169 +201,99 @@ cd OpenMontage
     estimatedTime: "30分钟"
   },
   {
-    id: 4,
-    name: "palmier-pro",
-    fullName: "palmier-io/palmier-pro",
-    description: "专为 AI 打造的 macOS 视频编辑器：AI 驱动的剪辑、转场、特效，让视频创作像聊天一样简单",
-    stars: 3137,
-    language: "Swift",
+    id: 7,
+    name: "daily_stock_analysis",
+    fullName: "ZhuLinsen/daily_stock_analysis",
+    description: "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行",
+    stars: 44330,
+    language: "Python",
     color: "#3572A5",
-    author: "palmier-io",
-    '通俗讲解': 'macOS 上的"AI 视频剪辑神器"！传统视频编辑要学很多技巧，但这个工具用 AI 帮你搞定一切——你说"把这段剪短一点"，它自己就办了。支持 AI 转场、AI 特效、智能配音，让视频创作像聊天一样简单。今天暴涨 904 颗星，Mac 用户的福音！',
-    tutorial: `🎯 今天我们要体验"AI 视频剪辑"！
+    author: "ZhuLinsen",
+    '通俗讲解': '这是一个"AI 股票分析师"！它能自动抓取多市场（A股、港股、美股）行情数据，结合实时新闻，用 LLM 分析给出投资决策建议。还支持自动推送到飞书/微信，最关键的是——支持零成本定时运行！今天新增 519 颗星，特别适合关注投资的你。',
+    tutorial: `🎯 今天我们要搭建"AI 股票分析师"！
 
-📦 第一步：安装 Palmier Pro
-从 Mac App Store 或官网下载安装
+📦 第一步：克隆项目
+git clone https://github.com/ZhuLinsen/daily_stock_analysis.git
+cd daily_stock_analysis
 
-✨ 第二步：导入你的素材
-把视频、图片拖进编辑器
+✨ 第二步：配置 API Key
+在配置文件中填入你的 LLM API Key 和数据源密钥
 
-🎮 第三步：用自然语言指挥 AI
-输入"帮我做个炫酷的开场"，AI 自动完成剪辑！`,
-    difficulty: "入门",
-    estimatedTime: "5分钟"
-  },
-  {
-    id: 5,
-    name: "kilocode",
-    fullName: "Kilo-Org/kilocode",
-    description: "Kilo 全栈 AI 编程平台：在 VS Code、JetBrains、CLI 中使用 500+ 模型进行编程，开源免费，支持多模型切换",
-    stars: 23295,
-    language: "TypeScript",
-    color: "#3572A5",
-    author: "Kilo-Org",
-    '通俗讲解': 'Kilo Code 是个"AI 编程全能王"！你可以在 VS Code、JetBrains 甚至命令行里用它，支持 500 多种 AI 模型随便换——GPT、Claude、Gemini 全都有。关键是开源免费，没有中间商赚差价。今天新增 470 颗星，程序员必备神器。',
-    tutorial: `🎯 今天我们要体验"AI 编程全能王"！
-
-📦 第一步：安装
-npm install -g @kilocode/cli
-
-✨ 第二步：启动 Kilo
-在任何项目目录下运行 kilo
-
-🎮 第三步：选择模型
-Kilo 支持 500+ 模型，你可以随时切换，看看哪个模型最适合你的项目！`,
-    difficulty: "入门",
-    estimatedTime: "10分钟"
-  },
-  {
-    id: 6,
-    name: "flue",
-    fullName: "withastro/flue",
-    description: "沙盒 Agent 框架：给 AI Agent 提供完整的 TypeScript 运行时环境，支持会话、工具、技能、文件系统隔离",
-    stars: 6058,
-    language: "TypeScript",
-    color: "#3572A5",
-    author: "withastro",
-    '通俗讲解': 'Astronomy 团队搞的 AI Agent 框架！它不只是让 AI 回答问题，而是给 AI 一个完整的"工作环境"——有会话管理、工具调用、技能加载，还有安全的沙盒环境。就像给 AI 配了一个带防护栏的工作台。今天新增 313 颗星，开发 AI Agent 的首选框架。',
-    tutorial: `🎯 今天我们要搭建"AI Agent 工作台"！
-
-📦 第一步：初始化项目
-npm create flue@latest my-agent
-cd my-agent
-
-✨ 第二步：创建你的第一个 Agent
-按照模板配置 model、tools、skills
-
-🎮 第三步：运行 Agent
-npm run dev
-看看 AI 在你的沙盒里自主完成任务！`,
+🎮 第三步：运行分析
+python main.py
+看看 AI 给你的投资建议！`,
     difficulty: "进阶",
     estimatedTime: "20分钟"
   },
   {
-    id: 7,
-    name: "voicebox",
-    fullName: "jamiepine/voicebox",
-    description: "开源 AI 语音工作室：克隆声音、语音合成、全局听写，23 种语言，7 个 TTS 引擎，本地运行完全隐私",
-    stars: 30959,
-    language: "TypeScript",
-    color: "#3572A5",
-    author: "jamiepine",
-    '通俗讲解': 'Voicebox 是个"AI 语音全能工作室"！它能克隆任何人的声音、用 23 种语言生成语音、甚至全局听写——按个快捷键就能说话打字。关键是全部本地运行，你的声音数据不会离开电脑。今天新增 140 颗星，替代 ElevenLabs 的最佳选择。',
-    tutorial: `🎯 今天我们要搭建"AI 语音工作室"！
-
-📦 第一步：下载 Voicebox
-去 voicebox.sh 下载对应系统的安装包
-
-✨ 第二步：克隆你的声音
-录几秒自己的声音，Voicebox 就能克隆
-
-🎮 第三步：生成语音或全局听写
-试试用克隆的声音说一句话，或者按快捷键直接语音打字！`,
-    difficulty: "入门",
-    estimatedTime: "10分钟"
-  },
-  {
     id: 8,
-    name: "twenty",
-    fullName: "twentyhq/twenty",
-    description: "开源 CRM，为 AI 而生：Salesforce 的免费替代品，内置 AI 功能，支持自动化客户管理",
-    stars: 50809,
-    language: "TypeScript",
+    name: "Anthropic-Cybersecurity-Skills",
+    fullName: "mukul975/Anthropic-Cybersecurity-Skills",
+    description: "754 个结构化网络安全技能供 AI Agent 使用：映射 MITRE ATT&CK、NIST CSF 等 5 大框架，兼容 Claude Code、Cursor、Copilot 等 20+ 平台",
+    stars: 17559,
+    language: "Python",
     color: "#3572A5",
-    author: "twentyhq",
-    '通俗讲解': 'Twenty 是个"AI 驱动的免费 CRM"！它是 Salesforce 的开源替代品，天生为 AI 设计——能自动分析客户数据、生成销售预测、智能推荐下一步行动。今天新增 140 颗星，创业公司和自由职业者的客户管理神器。',
-    tutorial: `🎯 今天我们要搭建"AI 客户管理系统"！
+    author: "mukul975",
+    '通俗讲解': '这是给 AI 安全助手准备的"百科全书"！754 个专业网络安全技能，覆盖了 MITRE、NIST 等 5 大安全框架。你的 AI 编程助手装上这些技能后，就能自动检测代码漏洞、评估安全风险。今天新增 445 颗星，AI 安全领域的必备资源。',
+    tutorial: `🎯 今天我们要给 AI 装上"安全专家"技能！
 
-📦 第一步：部署 Twenty
-docker compose up -d  # 一键启动
+📦 第一步：克隆仓库
+git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills.git
 
-✨ 第二步：访问控制台
-打开浏览器访问 http://localhost:3000
+✨ 第二步：导入技能
+将 skills 目录配置到你的 Claude Code / Cursor 等 AI 编程工具中
 
-🎮 第三步：体验 AI 功能
-导入你的客户数据，看看 AI 怎么帮你分析和管理！`,
-    difficulty: "入门",
+🎮 第三步：让 AI 审计代码
+告诉 AI "帮我审查这段代码的安全风险"，看看它怎么用 754 个安全知识来帮你！`,
+    difficulty: "进阶",
     estimatedTime: "15分钟"
   },
   {
     id: 9,
-    name: "timesfm",
-    fullName: "google-research/timesfm",
-    description: "Google 时间序列基础模型 TimesFM 2.5：预训练预测模型，200M 参数，支持 16K 上下文，已集成 BigQuery ML 和 Google Sheets",
-    stars: 24475,
+    name: "deer-flow",
+    fullName: "bytedance/deer-flow",
+    description: "字节跳动开源的长周期 SuperAgent 框架：研究、编码、创作全能型 AI 智能体，支持沙箱、记忆、工具、子智能体和消息网关",
+    stars: 72486,
     language: "Python",
     color: "#3572A5",
-    author: "google-research",
-    '通俗讲解': 'Google 搞了个"时间预测神器"！不管你是预测股票走势、天气变化、还是电商销量，这个模型都能帮你搞定。最新版本 TimesFM 2.5 只用 2 亿参数（之前 5 亿），但支持 16 倍长的上下文，精度反而更高。已经集成到 BigQuery ML 和 Google Sheets 里了！',
-    tutorial: `🎯 今天我们要搭建"时间预测引擎"！
+    author: "bytedance",
+    '通俗讲解': '字节跳动搞了个大招——"超级 AI 智能体"！它能自己研究问题、写代码、做创作，还能调动手下多个"子 AI"一起干活。有记忆、有工具、有沙箱环境，处理复杂任务从几分钟到几小时都能搞定。今天新增 415 颗星，总星标 7 万多，大厂开源的 AI Agent 标杆项目。',
+    tutorial: `🎯 今天我们要搭建"AI 超级智能体"！
 
-📦 第一步：安装
-pip install timesfm[torch]
+📦 第一步：克隆项目
+git clone https://github.com/bytedance/deer-flow.git
+cd deer-flow
 
-✨ 第二步：加载预训练模型
-import timesfm
-model = timesfm.TimesFM_2p5_200M_torch.from_pretrained("google/timesfm-2.5-200m-pytorch")
+✨ 第二步：配置模型
+在配置文件中设置你的 LLM API Key
 
-🎮 第三步：预测
-predictions = model.forecast(horizon=12, inputs=[your_data])
-看看 AI 预测的未来数据！`,
+🎮 第三步：让 AI 自主完成任务
+输入一个复杂任务，比如"调研 XX 技术并写报告"，看 Deer-Flow 如何分解任务、调度子智能体完成！`,
     difficulty: "进阶",
-    estimatedTime: "20分钟"
+    estimatedTime: "30分钟"
   },
   {
     id: 10,
-    name: "jcode",
-    fullName: "1jehuang/jcode",
-    description: "Coding Agent Harness：让 AI 编程 Agent 安全执行代码的工具箱，支持沙盒执行和权限控制",
-    stars: 7372,
-    language: "Rust",
-    color: "#dea584",
-    author: "1jehuang",
-    '通俗讲解': 'JCode 是给 AI 编程 Agent 配的"安全保险栓"！AI 写的代码直接运行太危险了——这个工具提供沙盒环境和权限控制，让 AI 可以在安全的环境下执行代码、调试程序。支持 Rust 编写的高性能执行引擎，今天新增 108 颗星，AI 编程安全必备。',
-    tutorial: `🎯 今天我们要搭建"AI 编程安全沙盒"！
+    name: "cognee",
+    fullName: "topoteretes/cognee",
+    description: "开源 AI Agent 记忆平台：让 AI 智能体拥有跨会话的持久长期记忆，基于自托管知识图谱引擎",
+    stars: 18587,
+    language: "Python",
+    color: "#3572A5",
+    author: "topoteretes",
+    '通俗讲解': '现在的 AI 有个大问题——聊完就忘！Cognee 就是来解决这个问题的。它给 AI 装上"长期记忆"，每次对话都记得之前的事情。基于知识图谱技术，自托管部署，你的数据完全在自己手里。今天新增 361 颗星，是让 AI 变"聪明"的关键基础设施。',
+    tutorial: `🎯 今天我们要给 AI 装上"长期记忆"！
 
-📦 第一步：安装 JCode
-cargo install jcode  # 或者从 Release 下载二进制
+📦 第一步：安装 Cognee
+pip install cognee
 
-✨ 第二步：配置沙盒环境
-按照 README 配置执行权限和安全策略
+✨ 第二步：初始化记忆引擎
+cognee init
 
-🎮 第三步：让 AI 安全执行代码
-把 AI 生成的代码丢进沙盒，看看它在受限环境中能不能跑通！`,
+🎮 第三步：让 AI 记住对话
+把历史对话喂给它，下次再聊的时候，AI 就能回忆起之前的内容了！`,
     difficulty: "进阶",
-    estimatedTime: "15分钟"
+    estimatedTime: "20分钟"
   }
 ]
 
