@@ -57,18 +57,18 @@ const generateDates = () => {
   return dates
 }
 
-// 2026年6月24日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
+// 2026年6月25日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
 const trendingProjects: Project[] = [
   {
     id: 1,
     name: "OpenMontage",
     fullName: "calesthio/OpenMontage",
     description: "全球首个开源 Agentic 视频制作系统：12 条管道、52 个工具、500+ Agent 技能，把你的 AI 编程助手变成完整视频工作室",
-    stars: 15305,
+    stars: 19007,
     language: "Python",
     color: "#3572A5",
     author: "calesthio",
-    '通俗讲解': '今天 GitHub Trending 第一！想让 AI 帮你做视频？OpenMontage 做到了！它把 AI 编程助手变成一个完整的视频制作工作室——有 12 条制作管道、52 个工具、500 多种技能。你只需要描述想要的视频，AI 自动完成脚本、画面、配音、剪辑。今天暴涨 3,590 颗星，直接登顶 Trending！视频创作者的梦中情工。',
+    '通俗讲解': '今天 GitHub Trending 第一！想让 AI 帮你做视频？OpenMontage 做到了！它把 AI 编程助手变成一个完整的视频制作工作室——有 12 条制作管道、52 个工具、500 多种技能。你只需要描述想要的视频，AI 自动完成脚本、画面、配音、剪辑。今天暴涨 3,703 颗星，直接登顶 Trending！视频创作者的梦中情工。',
     tutorial: `🎯 今天我们要搭建"AI 视频工作室"！
 
 📦 第一步：安装 OpenMontage
@@ -85,106 +85,14 @@ cd OpenMontage
   },
   {
     id: 2,
-    name: "palmier-pro",
-    fullName: "palmier-io/palmier-pro",
-    description: "专为 AI 打造的 macOS 视频编辑器：AI 驱动的剪辑、转场、特效，让视频创作像聊天一样简单",
-    stars: 8354,
-    language: "Swift",
-    color: "#E74C3C",
-    author: "palmier-io",
-    '通俗讲解': 'macOS 上的"AI 视频剪辑神器"！传统视频编辑要学很多技巧，但这个工具用 AI 帮你搞定一切——你说"把这段剪短一点"，它自己就办了。支持 AI 转场、AI 特效、智能配音，还内置 MCP 服务器，可以直接连 Claude Code、Cursor 等 AI 编程助手一起协作。今天暴涨 1,631 颗星，Mac 用户的福音！',
-    tutorial: `🎯 今天我们要体验"AI 视频剪辑"！
-
-📦 第一步：安装 Palmier Pro
-从官网下载安装包（macOS 26 Tahoe + Apple Silicon）
-
-✨ 第二步：导入你的素材
-把视频、图片拖进编辑器
-
-🎮 第三步：用自然语言指挥 AI
-输入"帮我做个炫酷的开场"，AI 自动完成剪辑！还可以连接 Claude Code 一起协作！`,
-    difficulty: "入门",
-    estimatedTime: "5分钟"
-  },
-  {
-    id: 3,
-    name: "codebase-memory-mcp",
-    fullName: "DeusData/codebase-memory-mcp",
-    description: "高性能代码智能 MCP 服务器：把代码库索引成知识图谱，158种语言，毫秒级响应，零依赖，单文件二进制",
-    stars: 12738,
-    language: "C",
-    color: "#dea584",
-    author: "DeusData",
-    '通俗讲解': '给你的 AI 编程助手装上"超级大脑"！这个工具把你整个代码库变成知识图谱，AI 提问时毫秒级回答。支持 158 种编程语言，而且是独立二进制文件——不用装任何依赖！Linux 内核（2800万行代码）3分钟就能索引完。今天暴涨 1,299 颗星，Claude Code、Cursor 等编程 AI 的神器搭档。',
-    tutorial: `🎯 今天我们要给 AI 编程工具装上"超级大脑"！
-
-📦 第一步：下载二进制
-去 GitHub Releases 页面下载对应系统的二进制文件
-
-✨ 第二步：索引代码库
-./codebase-memory-mcp index --path /path/to/your-project
-
-🎮 第三步：连接 MCP 服务器
-在 Claude Code 或其他 MCP 客户端中配置，现在 AI 能瞬间理解你的整个项目了！`,
-    difficulty: "入门",
-    estimatedTime: "10分钟"
-  },
-  {
-    id: 4,
-    name: "voicebox",
-    fullName: "jamiepine/voicebox",
-    description: "开源 AI 语音工作室：克隆声音、语音转文字、创造语音，一站式 AI 音频解决方案",
-    stars: 33056,
-    language: "TypeScript",
-    color: "#3572A5",
-    author: "jamiepine",
-    '通俗讲解': 'AI 语音界的瑞士军刀！这个工具能让你克隆自己的声音、把文字变成语音、甚至创造全新的声音。开源免费，支持语音克隆、语音合成、语音转写全套功能，还有 7 种 TTS 引擎和 23 种语言。今天新增 1,042 颗星，总星标突破 3.3 万，做播客、配音、有声书的必备工具！',
-    tutorial: `🎯 今天我们要搭建"AI 语音工作室"！
-
-📦 第一步：安装 Voicebox
-npm install voicebox  # 或从源码编译
-
-✨ 第二步：克隆你的声音
-录制一段语音样本，让 Voicebox 学习你的音色
-
-🎮 第三步：输入文字生成语音
-输入你想说的话，AI 用你的声音读出来！还支持 [laugh]、[sigh] 等表情标签！`,
-    difficulty: "入门",
-    estimatedTime: "15分钟"
-  },
-  {
-    id: 5,
-    name: "Anthropic-Cybersecurity-Skills",
-    fullName: "mukul975/Anthropic-Cybersecurity-Skills",
-    description: "817 个结构化网络安全技能库，映射 6 大安全框架，让 AI Agent 秒变安全专家",
-    stars: 19551,
-    language: "Python",
-    color: "#3572A5",
-    author: "mukul975",
-    '通俗讲解': '给你的 AI 安全助手配上"百科全书"！这个仓库包含 817 个精心编写的网络安全技能，涵盖 29 个安全领域，还映射了 MITRE ATT&CK、NIST 等 6 大国际安全框架。不管你是做渗透测试、漏洞分析还是应急响应，AI 都能给你专业指导。今天新增 1,040 颗星，安全从业者和 AI 爱好者的宝藏！',
-    tutorial: `🎯 今天我们要让 AI 变成"安全专家"！
-
-📦 第一步：克隆技能库
-git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills.git
-
-✨ 第二步：连接到你的 AI Agent
-把技能库路径配置到你的 Claude Code / Cursor 等工具中
-
-🎮 第三步：用自然语言提问安全相关问题
-"帮我分析这个内存转储文件"、"这个 Sigma 规则能抓到什么攻击？"——AI 秒回专业答案！`,
-    difficulty: "进阶",
-    estimatedTime: "20分钟"
-  },
-  {
-    id: 6,
     name: "ai-website-cloner-template",
     fullName: "JCodesMore/ai-website-cloner-template",
     description: "一条命令用 AI 编程助手克隆任何网站：支持 Claude、Cursor 等 AI Agent，自动生成完整前端代码",
-    stars: 18458,
+    stars: 19213,
     language: "TypeScript",
-    color: "#3572A5",
+    color: "#E74C3C",
     author: "JCodesMore",
-    '通俗讲解': '想复刻任何网站但不会写代码？这个工具让你用 AI 编程助手一键克隆！输入网址，AI 自动分析页面结构、样式、交互，生成完整的前端代码。支持 Claude Code（推荐 Opus 4.7）、Codex CLI 等多种 AI 编程工具。总星标 1.8 万，设计师和开发者的效率神器！',
+    '通俗讲解': '想复刻任何网站但不会写代码？这个工具让你用 AI 编程助手一键克隆！输入网址，AI 自动分析页面结构、样式、交互，生成完整的前端代码。支持 Claude Code（推荐 Opus 4.7）、Codex CLI 等多种 AI 编程工具。今天新增 693 颗星，总星标突破 1.9 万，设计师和开发者的效率神器！',
     tutorial: `🎯 今天我们要"克隆"任何网站！
 
 📦 第一步：使用模板
@@ -199,66 +107,111 @@ claude --chrome  # 或使用其他支持的 AI 编程工具
     estimatedTime: "10分钟"
   },
   {
-    id: 7,
-    name: "gstack",
-    fullName: "garrytan/gstack",
-    description: "YC CEO Garry Tan 的 Claude Code 工作流：23 个专业工具，化身 CEO、设计师、工程经理、发布经理、文档工程师和 QA",
-    stars: 7410,
-    language: "Python",
-    color: "#27AE60",
-    author: "garrytan",
-    '通俗讲解': 'YC 掌门人 Garry Tan 分享了他一个人干翻整个团队的秘密武器！他把 23 个专业工具打包成一个系统，让 Claude Code 扮演 CEO、设计师、工程经理、QA 等多个角色。有了这套工具，他在 60 天内交付了 3 个生产服务和 40+ 功能——效率是 2013 年的 810 倍！今天上榜 Trending，独辟蹊径的 AI 提效方案。',
-    tutorial: `🎯 今天我们要学习"一个人干翻一个团队"的秘诀！
-
-📦 第一步：安装 GStack
-git clone https://github.com/garrytan/gstack.git
-cd gstack
-
-✨ 第二步：配置 Claude Code
-按照 README 安装 23 个专业工具
-
-🎮 第三步：让 AI 扮演多个角色
-"作为 CEO，分析一下这个项目"、"作为设计师，优化这个界面"——一套工具，多种角色！`,
-    difficulty: "进阶",
-    estimatedTime: "25分钟"
-  },
-  {
-    id: 8,
-    name: "worldmonitor",
-    fullName: "koala73/worldmonitor",
-    description: "实时全球情报仪表盘：AI 新闻聚合、地缘政治监控、基础设施追踪，统一态势感知界面",
-    stars: 58996,
+    id: 3,
+    name: "design.md",
+    fullName: "google-labs-code/design.md",
+    description: "Google Labs 出品的视觉规范格式：用结构化 YAML + Markdown 描述设计系统，让 AI 编程助手精准理解你的视觉风格",
+    stars: 17185,
     language: "TypeScript",
-    color: "#E67E22",
-    author: "koala73",
-    '通俗讲解': '全球局势一目了然！WorldMonitor 是一个实时全球情报仪表盘，用 AI 聚合 500+ 新闻源，覆盖军事、经济、灾害、科技等 15 个类别。还有 3D 地球仪和 56 种地图图层，国家不稳定指数、金融雷达等功能。支持本地 AI（Ollama），不用 API Key 也能用。总星标近 5.9 万，适合关注全球动态的你！',
-    tutorial: `🎯 今天我们要搭建"全球情报中心"！
+    color: "#27AE60",
+    author: "google-labs-code",
+    '通俗讲解': 'Google 给 AI 编程助手准备的"设计说明书"模板！以前你用自然语言描述"要简约大气"，AI 可能理解成一万个样子。现在你用 DESIGN.md 精确告诉 AI 配色、字体、间距——AI 生成的界面跟你的设计稿一模一样。今天新增 504 颗星，总星标近 1.7 万，设计师+开发者必备！',
+    tutorial: `🎯 今天我们要给 AI 编程助手一份"设计说明书"！
 
-📦 第一步：访问 WorldMonitor
-去 worldmonitor.app 在线体验，或下载桌面版（支持 macOS/Windows/Linux）
+📦 第一步：创建 DESIGN.md
+在你的项目根目录新建 DESIGN.md 文件
 
-✨ 第二步：选择你的场景
-科技、金融、商品、能源——6 个站点变体，一个代码库
+✨ 第二步：填写设计令牌
+用 YAML front matter 定义颜色、字体、间距等设计元素
 
-🎮 第三步：配置本地 AI（可选）
-安装 Ollama，WorldMonitor 就可以完全离线运行，隐私无忧！`,
+🎮 第三步：让 AI 读取并应用
+把 DESIGN.md 放在项目目录，AI 编程助手会自动读取并按规范生成界面！`,
     difficulty: "入门",
     estimatedTime: "10分钟"
   },
   {
-    id: 9,
+    id: 4,
+    name: "daily_stock_analysis",
+    fullName: "ZhuLinsen/daily_stock_analysis",
+    description: "LLM 驱动的多市场股票智能分析系统：A股/港股/美股/日股/韩股，自动推送决策看板到企业微信/飞书/Telegram",
+    stars: 3200,
+    language: "Python",
+    color: "#E67E22",
+    author: "ZhuLinsen",
+    '通俗讲解': '你的"AI 炒股分析师"！这个系统每天早上自动分析你关注的股票，用 LLM 生成决策报告——买还是卖、目标价多少、风险在哪，然后推送到你的企业微信或飞书。支持 A 股、港股、美股、日股、韩股，零成本用 GitHub Actions 定时运行。今天上榜 Trending，金融人的 AI 利器！',
+    tutorial: `🎯 今天我们要搭建"AI 炒股助手"！
+
+📦 第一步：Fork 项目
+点击右上角 Fork 按钮
+
+✨ 第二步：配置 API Key
+在 Settings → Secrets 中配置 Anspire 或 OpenAI 等 LLM 的 API Key
+
+🎮 第三步：设置自选股和推送渠道
+填写 STOCK_LIST 和 WECHAT_WEBHOOK_URL / FEISHU_WEBHOOK_URL，每天早上自动收到分析报告！`,
+    difficulty: "入门",
+    estimatedTime: "15分钟"
+  },
+  {
+    id: 5,
+    name: "harness",
+    fullName: "revfactory/harness",
+    description: "Claude Code 的元技能工厂：一句话生成专业 AI Agent 团队，自动分配角色和技能，六大架构模式可选",
+    stars: 7689,
+    language: "HTML",
+    color: "#9B59B6",
+    author: "revfactory",
+    '通俗讲解': '给 Claude Code 装上"团队组建器"！你说一句"帮我建一个前端团队"，它自动创建多个专业 Agent——产品经理、设计师、前端工程师、测试工程师，每个都有专属技能。支持 6 种团队架构模式，今天新增 274 颗星，总星标突破 7,600，让 AI 帮你管理团队！',
+    tutorial: `🎯 今天我们要组建"AI 虚拟团队"！
+
+📦 第一步：安装 Harness
+在 Claude Code 中安装 harness 插件
+
+✨ 第二步：描述你的需求
+输入"帮我建一个前端团队"或"配置一个 DevOps 团队"
+
+🎮 第三步：看 AI 自动组建
+Harness 自动生成分工的 Agent 团队和专属技能，各司其职一起干活！`,
+    difficulty: "入门",
+    estimatedTime: "10分钟"
+  },
+  {
+    id: 6,
+    name: "orca",
+    fullName: "stablyai/orca",
+    description: "并行 AI Agent 编排 IDE：同时运行 Codex、Claude Code、OpenCode，多工作区并行对比，手机随时监控",
+    stars: 6696,
+    language: "TypeScript",
+    color: "#3498DB",
+    author: "stablyai",
+    '通俗讲解': 'AI 编程的"空中交通管制塔"！以前你用 Claude Code 写代码，现在你可以同时开 5 个 AI 编程助手——每个负责不同模块，最后对比结果选最好的。还有手机 App 随时监控进度，Design Mode 能直接截图给 AI 看界面。今天新增 387 颗星，多 AI 协作的终极方案！',
+    tutorial: `🎯 今天我们要体验"多 AI 并行编程"！
+
+📦 第一步：安装 Orca
+从 GitHub Releases 下载桌面版（macOS/Windows/Linux）
+
+✨ 第二步：配置你的 AI 订阅
+绑定 Codex、Claude Code 或其他编程 AI 的账号
+
+🎮 第三步：扇出提示词
+输入一个任务，Orca 自动分发给多个 Agent 并行处理，最后一键对比合并！`,
+    difficulty: "入门",
+    estimatedTime: "15分钟"
+  },
+  {
+    id: 7,
     name: "hermes-agent",
     fullName: "NousResearch/hermes-agent",
-    description: "Nous Research 推出的自进化 AI Agent：内置学习循环，能从经验中创建技能、自我改进，支持任意模型",
-    stars: 7200,
+    description: "Nous Research 自进化 AI Agent：内置学习循环，从经验中创建技能、自我改进，支持 200+ 模型和多平台",
+    stars: 8500,
     language: "Python",
-    color: "#9B59B6",
+    color: "#2ECC71",
     author: "NousResearch",
     '通俗讲解': 'AI Agent 界的"终身学习者"！Hermes Agent 有个独家功能——内置学习循环。它会从每次交互中学习，自动创建新技能，越用越聪明。支持 Telegram、Discord、Slack、WhatsApp 等平台，还能跑在只要 5 美元的 VPS 上。最重要的是——不绑定任何模型，OpenAI、Anthropic、Kimi、MiniMax 随便换！今天上榜 Trending，小而美的 AI Agent 新秀。',
     tutorial: `🎯 今天我们要打造一个"会学习的 AI 伙伴"！
 
-📦 第一步：部署 Hermes Agent
-npm install -g hermes-agent  # 或从源码安装
+📦 第一步：一键安装
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 
 ✨ 第二步：选择你的模型
 支持 200+ 模型——OpenRouter、NovitaAI、Kimi、MiniMax 随便选
@@ -266,31 +219,76 @@ npm install -g hermes-agent  # 或从源码安装
 🎮 第三步：连接你喜欢的平台
 Telegram、Discord、Slack 都行，让 Hermes 在你常用的平台上工作！`,
     difficulty: "入门",
+    estimatedTime: "10分钟"
+  },
+  {
+    id: 8,
+    name: "hiring-agent",
+    fullName: "interviewstreet/hiring-agent",
+    description: "AI 简历评估 Agent：解析 PDF 简历、提取结构化数据、结合 GitHub 信号，输出客观评分和评估报告",
+    stars: 2077,
+    language: "Python",
+    color: "#E74C3C",
+    author: "interviewstreet",
+    '通俗讲解': 'HR 的 AI 助手来了！这个工具自动解析 PDF 简历，提取个人信息和项目经历，还能去 GitHub 看看候选人的代码质量，最后给出客观评分和详细评估报告。支持本地 Ollama 模型或 Google Gemini，公平、透明、可解释。今天新增 152 颗星，招聘效率翻倍神器！',
+    tutorial: `🎯 今天我们要搭建"AI 招聘助手"！
+
+📦 第一步：安装 Hiring Agent
+pip install hiring-agent
+
+✨ 第二步：配置 LLM 后端
+选择 Ollama（本地免费）或 Google Gemini（云端）
+
+🎮 第三步：批量评估简历
+把候选人 PDF 简历丢进去，AI 自动解析、分析 GitHub 信号、输出评分报告！`,
+    difficulty: "入门",
     estimatedTime: "15分钟"
   },
   {
-    id: 10,
-    name: "deer-flow",
-    fullName: "bytedance/deer-flow",
-    description: "字节跳动开源的长周期 SuperAgent 框架：研究、编码、创作全能型 AI 智能体，支持沙箱、记忆、工具、子智能体和消息网关",
-    stars: 72486,
-    language: "Python",
-    color: "#27AE60",
-    author: "bytedance",
-    '通俗讲解': '字节跳动搞了个大招——"超级 AI 智能体"！它能自己研究问题、写代码、做创作，还能调动手下多个"子 AI"一起干活。有记忆、有工具、有沙箱环境，处理复杂任务从几分钟到几小时都能搞定。今天新增 279 颗星，总星标突破 7.2 万，大厂开源的 AI Agent 标杆项目。推荐搭配 Doubao-Seed-2.0-Code 或 DeepSeek v3.2 使用效果最佳！',
-    tutorial: `🎯 今天我们要搭建"AI 超级智能体"！
+    id: 9,
+    name: "container",
+    fullName: "apple/container",
+    description: "Apple 官方轻量虚拟机容器工具：用 Swift 编写，在 Mac 上创建和运行 Linux 容器，优化 Apple Silicon 性能",
+    stars: 42035,
+    language: "Swift",
+    color: "#95A5A6",
+    author: "apple",
+    '通俗讲解': '苹果官方推出的"轻量级 Linux 容器工具"！虽然它本身不是 AI 项目，但在 AI 开发中非常实用——你可以在 Mac 上快速创建隔离的 Linux 环境来训练和部署 AI 模型，而且针对 Apple Silicon 做了深度优化。今天新增 1,746 颗星，总星标突破 4.2 万，Mac 开发者的新宠！',
+    tutorial: `🎯 今天我们要在 Mac 上搭建"轻量 Linux 容器"！
 
-📦 第一步：克隆项目
-git clone https://github.com/bytedance/deer-flow.git
-cd deer-flow
+📦 第一步：安装 Container
+从 Apple 开发者网站下载 container 工具
 
-✨ 第二步：配置模型
-推荐使用 Doubao-Seed-2.0-Code 或 DeepSeek v3.2，在配置文件中设置
+✨ 第二步：创建你的第一个容器
+运行 container 命令创建隔离的 Linux 环境
 
-🎮 第三步：让 AI 自主完成任务
-输入一个复杂任务，比如"调研 XX 技术并写报告"，看 Deer-Flow 如何分解任务、调度子智能体完成！`,
+🎮 第三步：在里面跑 AI 模型
+容器内安装 PyTorch/TensorFlow，直接在 Mac 上训练和部署 AI 模型！`,
     difficulty: "进阶",
-    estimatedTime: "30分钟"
+    estimatedTime: "20分钟"
+  },
+  {
+    id: 10,
+    name: "headunit-revived",
+    fullName: "andreknieriem/headunit-revived",
+    description: "Android Auto 车机显示应用：在任意屏幕上显示 Android Auto 界面，支持手势控制和 AI 语音交互",
+    stars: 1401,
+    language: "Kotlin",
+    color: "#95A5A6",
+    author: "andreknieriem",
+    '通俗讲解': '把手机变车载屏幕的神器！这个应用让你在任意屏幕上显示 Android Auto 界面，支持手势控制、AI 语音交互。虽然主要是个工具类项目，但结合了 AI 语音功能——开车时用手势或语音控制导航、音乐、消息，解放双手。今天新增 62 颗星，司机朋友的 AI 好帮手！',
+    tutorial: `🎯 今天我们要打造"AI 车载屏幕"！
+
+📦 第一步：下载 headunit-revived
+从 GitHub Releases 下载 APK 安装包
+
+✨ 第二步：安装到平板或车载屏幕
+把 APK 安装到备用平板或车载显示屏上
+
+🎮 第三步：连接 Android Auto
+配对你的手机和屏幕，享受 AI 语音控制的车载体验！`,
+    difficulty: "入门",
+    estimatedTime: "10分钟"
   }
 ]
 
