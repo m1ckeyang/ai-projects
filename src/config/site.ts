@@ -57,18 +57,18 @@ const generateDates = () => {
   return dates
 }
 
-// 2026年6月25日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
+// 2026年6月26日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
 const trendingProjects: Project[] = [
   {
     id: 1,
     name: "OpenMontage",
     fullName: "calesthio/OpenMontage",
     description: "全球首个开源 Agentic 视频制作系统：12 条管道、52 个工具、500+ Agent 技能，把你的 AI 编程助手变成完整视频工作室",
-    stars: 19007,
+    stars: 21899,
     language: "Python",
     color: "#3572A5",
     author: "calesthio",
-    '通俗讲解': '今天 GitHub Trending 第一！想让 AI 帮你做视频？OpenMontage 做到了！它把 AI 编程助手变成一个完整的视频制作工作室——有 12 条制作管道、52 个工具、500 多种技能。你只需要描述想要的视频，AI 自动完成脚本、画面、配音、剪辑。今天暴涨 3,703 颗星，直接登顶 Trending！视频创作者的梦中情工。',
+    '通俗讲解': '今天 GitHub Trending 第一！想让 AI 帮你做视频？OpenMontage 做到了！它把 AI 编程助手变成一个完整的视频制作工作室——有 12 条制作管道、52 个工具、500 多种技能。你只需要描述想要的视频，AI 自动完成脚本、画面、配音、剪辑。今天暴涨 3,553 颗星，直接登顶 Trending！视频创作者的梦中情工。',
     tutorial: `🎯 今天我们要搭建"AI 视频工作室"！
 
 📦 第一步：安装 OpenMontage
@@ -85,37 +85,14 @@ cd OpenMontage
   },
   {
     id: 2,
-    name: "ai-website-cloner-template",
-    fullName: "JCodesMore/ai-website-cloner-template",
-    description: "一条命令用 AI 编程助手克隆任何网站：支持 Claude、Cursor 等 AI Agent，自动生成完整前端代码",
-    stars: 19213,
-    language: "TypeScript",
-    color: "#E74C3C",
-    author: "JCodesMore",
-    '通俗讲解': '想复刻任何网站但不会写代码？这个工具让你用 AI 编程助手一键克隆！输入网址，AI 自动分析页面结构、样式、交互，生成完整的前端代码。支持 Claude Code（推荐 Opus 4.7）、Codex CLI 等多种 AI 编程工具。今天新增 693 颗星，总星标突破 1.9 万，设计师和开发者的效率神器！',
-    tutorial: `🎯 今天我们要"克隆"任何网站！
-
-📦 第一步：使用模板
-点击 GitHub 页面的 "Use this template" 按钮创建你自己的仓库
-
-✨ 第二步：启动 AI Agent
-claude --chrome  # 或使用其他支持的 AI 编程工具
-
-🎮 第三步：运行 /clone-website 命令
-输入目标网站 URL，AI 自动分析并生成完整的 Next.js 前端代码！`,
-    difficulty: "入门",
-    estimatedTime: "10分钟"
-  },
-  {
-    id: 3,
     name: "design.md",
     fullName: "google-labs-code/design.md",
     description: "Google Labs 出品的视觉规范格式：用结构化 YAML + Markdown 描述设计系统，让 AI 编程助手精准理解你的视觉风格",
-    stars: 17185,
+    stars: 18944,
     language: "TypeScript",
     color: "#27AE60",
     author: "google-labs-code",
-    '通俗讲解': 'Google 给 AI 编程助手准备的"设计说明书"模板！以前你用自然语言描述"要简约大气"，AI 可能理解成一万个样子。现在你用 DESIGN.md 精确告诉 AI 配色、字体、间距——AI 生成的界面跟你的设计稿一模一样。今天新增 504 颗星，总星标近 1.7 万，设计师+开发者必备！',
+    '通俗讲解': 'Google 给 AI 编程助手准备的"设计说明书"模板！以前你用自然语言描述"要简约大气"，AI 可能理解成一万个样子。现在你用 DESIGN.md 精确告诉 AI 配色、字体、间距——AI 生成的界面跟你的设计稿一模一样。今天新增 1,407 颗星，总星标近 1.9 万，设计师+开发者必备！',
     tutorial: `🎯 今天我们要给 AI 编程助手一份"设计说明书"！
 
 📦 第一步：创建 DESIGN.md
@@ -130,165 +107,189 @@ claude --chrome  # 或使用其他支持的 AI 编程工具
     estimatedTime: "10分钟"
   },
   {
-    id: 4,
-    name: "daily_stock_analysis",
-    fullName: "ZhuLinsen/daily_stock_analysis",
-    description: "LLM 驱动的多市场股票智能分析系统：A股/港股/美股/日股/韩股，自动推送决策看板到企业微信/飞书/Telegram",
-    stars: 3200,
-    language: "Python",
-    color: "#E67E22",
-    author: "ZhuLinsen",
-    '通俗讲解': '你的"AI 炒股分析师"！这个系统每天早上自动分析你关注的股票，用 LLM 生成决策报告——买还是卖、目标价多少、风险在哪，然后推送到你的企业微信或飞书。支持 A 股、港股、美股、日股、韩股，零成本用 GitHub Actions 定时运行。今天上榜 Trending，金融人的 AI 利器！',
-    tutorial: `🎯 今天我们要搭建"AI 炒股助手"！
+    id: 3,
+    name: "ai-website-cloner-template",
+    fullName: "JCodesMore/ai-website-cloner-template",
+    description: "一条命令用 AI 编程助手克隆任何网站：支持 Claude、Cursor 等 AI Agent，自动生成完整前端代码",
+    stars: 20313,
+    language: "TypeScript",
+    color: "#E74C3C",
+    author: "JCodesMore",
+    '通俗讲解': '想复刻任何网站但不会写代码？这个工具让你用 AI 编程助手一键克隆！输入网址，AI 自动分析页面结构、样式、交互，生成完整的前端代码。支持 Claude Code（推荐 Opus 4.7）、Codex CLI 等多种 AI 编程工具。今天新增 1,021 颗星，总星标突破 2 万，设计师和开发者的效率神器！',
+    tutorial: `🎯 今天我们要"克隆"任何网站！
 
-📦 第一步：Fork 项目
-点击右上角 Fork 按钮
+📦 第一步：使用模板
+点击 GitHub 页面的 "Use this template" 按钮创建你自己的仓库
 
-✨ 第二步：配置 API Key
-在 Settings → Secrets 中配置 Anspire 或 OpenAI 等 LLM 的 API Key
+✨ 第二步：启动 AI Agent
+claude --chrome  # 或使用其他支持的 AI 编程工具
 
-🎮 第三步：设置自选股和推送渠道
-填写 STOCK_LIST 和 WECHAT_WEBHOOK_URL / FEISHU_WEBHOOK_URL，每天早上自动收到分析报告！`,
-    difficulty: "入门",
-    estimatedTime: "15分钟"
-  },
-  {
-    id: 5,
-    name: "harness",
-    fullName: "revfactory/harness",
-    description: "Claude Code 的元技能工厂：一句话生成专业 AI Agent 团队，自动分配角色和技能，六大架构模式可选",
-    stars: 7689,
-    language: "HTML",
-    color: "#9B59B6",
-    author: "revfactory",
-    '通俗讲解': '给 Claude Code 装上"团队组建器"！你说一句"帮我建一个前端团队"，它自动创建多个专业 Agent——产品经理、设计师、前端工程师、测试工程师，每个都有专属技能。支持 6 种团队架构模式，今天新增 274 颗星，总星标突破 7,600，让 AI 帮你管理团队！',
-    tutorial: `🎯 今天我们要组建"AI 虚拟团队"！
-
-📦 第一步：安装 Harness
-在 Claude Code 中安装 harness 插件
-
-✨ 第二步：描述你的需求
-输入"帮我建一个前端团队"或"配置一个 DevOps 团队"
-
-🎮 第三步：看 AI 自动组建
-Harness 自动生成分工的 Agent 团队和专属技能，各司其职一起干活！`,
+🎮 第三步：运行 /clone-website 命令
+输入目标网站 URL，AI 自动分析并生成完整的 Next.js 前端代码！`,
     difficulty: "入门",
     estimatedTime: "10分钟"
   },
   {
-    id: 6,
-    name: "orca",
-    fullName: "stablyai/orca",
-    description: "并行 AI Agent 编排 IDE：同时运行 Codex、Claude Code、OpenCode，多工作区并行对比，手机随时监控",
-    stars: 6696,
+    id: 4,
+    name: "page-agent",
+    fullName: "alibaba/page-agent",
+    description: "阿里巴巴出品：JavaScript 页面内 GUI Agent，用自然语言控制网页界面，无需浏览器插件",
+    stars: 19753,
     language: "TypeScript",
-    color: "#3498DB",
-    author: "stablyai",
-    '通俗讲解': 'AI 编程的"空中交通管制塔"！以前你用 Claude Code 写代码，现在你可以同时开 5 个 AI 编程助手——每个负责不同模块，最后对比结果选最好的。还有手机 App 随时监控进度，Design Mode 能直接截图给 AI 看界面。今天新增 387 颗星，多 AI 协作的终极方案！',
-    tutorial: `🎯 今天我们要体验"多 AI 并行编程"！
+    color: "#1677FF",
+    author: "alibaba",
+    '通俗讲解': '阿里搞了个大招！PageAgent 让你直接用自然语言控制任何网页——不用装浏览器插件、不用 Python、不用 Headless 浏览器。就在网页里加一行 JS，就能让 AI 帮你填表单、点按钮、操作页面。支持通义千问等模型，今天新增 196 颗星，总星标近 2 万，网页自动化从此变简单！',
+    tutorial: `🎯 今天我们要给网页装上"AI 操控手"！
 
-📦 第一步：安装 Orca
-从 GitHub Releases 下载桌面版（macOS/Windows/Linux）
+📦 第一步：引入 PageAgent
+<script src="https://cdn.jsdelivr.net/npm/page-agent@1.10.0/dist/iife/page-agent.demo.js"></script>
 
-✨ 第二步：配置你的 AI 订阅
-绑定 Codex、Claude Code 或其他编程 AI 的账号
+✨ 第二步：配置模型
+const agent = new PageAgent({ model: 'qwen3.5-plus', apiKey: 'YOUR_KEY' })
 
-🎮 第三步：扇出提示词
-输入一个任务，Orca 自动分发给多个 Agent 并行处理，最后一键对比合并！`,
+🎮 第三步：用自然语言操控网页
+agent.execute('点击登录按钮') —— 就这么简单！`,
+    difficulty: "入门",
+    estimatedTime: "10分钟"
+  },
+  {
+    id: 5,
+    name: "ai-berkshire",
+    fullName: "xbtlin/ai-berkshire",
+    description: "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架，巴菲特·芒格·段永平·李录四大师方法论 + 多 Agent 并行研究",
+    stars: 1781,
+    language: "Python",
+    color: "#27AE60",
+    author: "xbtlin",
+    '通俗讲解': '用 AI 重新定义投资研究！这个工具把巴菲特、芒格、段永平、李录四位大师的投资方法论系统化，通过 Claude Code 实现专业级投研。4 个 Agent 同时研究一家公司，各自独立搜索、独立判断、互相挑战。实盘数据显示跑赢全球主要指数，今天新增 201 颗星，金融人的 AI 利器！',
+    tutorial: `🎯 今天我们要组建"AI 投研团队"！
+
+📦 第一步：安装 AI Berkshire
+在 Claude Code 中安装 AI Berkshire Skill 合集
+
+✨ 第二步：选择分析方法
+输入你想研究的公司，比如"帮我分析拼多多"
+
+🎮 第三步：看 4 位大师的 AI 化身辩论
+段永平看商业模式、巴菲特看财务估值、芒格逆向思考、李录看长期确定性——最终综合报告出炉！`,
+    difficulty: "进阶",
+    estimatedTime: "20分钟"
+  },
+  {
+    id: 6,
+    name: "MinerU",
+    fullName: "opendatalab/MinerU",
+    description: "高精度文档解析引擎：将 PDF、Office 文档转换为 LLM 可用的 Markdown/JSON，支持 109 种语言 OCR",
+    stars: 15000,
+    language: "Python",
+    color: "#E67E22",
+    author: "opendatalab",
+    '通俗讲解': '你的"文档翻译官"！MinerU 能把各种复杂文档——PDF、Word、PPT、Excel、图片——全部转换成 AI 能读懂的结构化格式。支持公式转 LaTeX、表格转 HTML，还能识别手写体和扫描件。内置 VLM+OCR 双引擎，支持 109 种语言。对做 RAG（检索增强生成）和 AI Agent 来说，这是必备的基础设施！',
+    tutorial: `🎯 今天我们要搭建"AI 文档解析流水线"！
+
+📦 第一步：安装 MinerU
+pip install mineru
+
+✨ 第二步：配置模型
+下载 VLM 和 OCR 模型（支持本地部署，完全离线运行）
+
+🎮 第三步：解析你的文档
+mineru your-document.pdf —— 输出结构化 Markdown/JSON，AI 直接可用！`,
     difficulty: "入门",
     estimatedTime: "15分钟"
   },
   {
     id: 7,
-    name: "hermes-agent",
-    fullName: "NousResearch/hermes-agent",
-    description: "Nous Research 自进化 AI Agent：内置学习循环，从经验中创建技能、自我改进，支持 200+ 模型和多平台",
-    stars: 8500,
+    name: "agent-toolkit-for-aws",
+    fullName: "aws/agent-toolkit-for-aws",
+    description: "AWS 官方 AI Agent 工具包：MCP Server、Skills 和插件，帮助 AI Agent 在 AWS 上构建、部署和管理应用",
+    stars: 1105,
     language: "Python",
-    color: "#2ECC71",
-    author: "NousResearch",
-    '通俗讲解': 'AI Agent 界的"终身学习者"！Hermes Agent 有个独家功能——内置学习循环。它会从每次交互中学习，自动创建新技能，越用越聪明。支持 Telegram、Discord、Slack、WhatsApp 等平台，还能跑在只要 5 美元的 VPS 上。最重要的是——不绑定任何模型，OpenAI、Anthropic、Kimi、MiniMax 随便换！今天上榜 Trending，小而美的 AI Agent 新秀。',
-    tutorial: `🎯 今天我们要打造一个"会学习的 AI 伙伴"！
+    color: "#FF9900",
+    author: "aws",
+    '通俗讲解': 'AWS 官方给 AI Agent 发的"上岗证"！有了这个工具包，Claude Code、Codex、Cursor 等 AI 编程助手可以直接操作 AWS 服务——选服务、写 CDK、部署容器、查账单、做安全扫描。今天新增 15 颗星，总星标破 1,100，用 AWS 的开发者福音！',
+    tutorial: `🎯 今天我们要让 AI Agent 管理 AWS！
 
-📦 第一步：一键安装
-curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+📦 第一步：安装 AWS Agent Toolkit
+在 Claude Code 中运行：/plugin install aws-core@claude-plugins-official
 
-✨ 第二步：选择你的模型
-支持 200+ 模型——OpenRouter、NovitaAI、Kimi、MiniMax 随便选
+✨ 第二步：配置 AWS 凭证
+设置 AWS_ACCESS_KEY_ID 和 AWS_SECRET_ACCESS_KEY
 
-🎮 第三步：连接你喜欢的平台
-Telegram、Discord、Slack 都行，让 Hermes 在你常用的平台上工作！`,
+🎮 第三步：让 AI 帮你管理云资源
+"帮我创建一个 S3 桶"、"部署一个 Lambda 函数"——AI 直接操作！`,
     difficulty: "入门",
     estimatedTime: "10分钟"
   },
   {
     id: 8,
-    name: "hiring-agent",
-    fullName: "interviewstreet/hiring-agent",
-    description: "AI 简历评估 Agent：解析 PDF 简历、提取结构化数据、结合 GitHub 信号，输出客观评分和评估报告",
-    stars: 2077,
-    language: "Python",
-    color: "#E74C3C",
-    author: "interviewstreet",
-    '通俗讲解': 'HR 的 AI 助手来了！这个工具自动解析 PDF 简历，提取个人信息和项目经历，还能去 GitHub 看看候选人的代码质量，最后给出客观评分和详细评估报告。支持本地 Ollama 模型或 Google Gemini，公平、透明、可解释。今天新增 152 颗星，招聘效率翻倍神器！',
-    tutorial: `🎯 今天我们要搭建"AI 招聘助手"！
+    name: "claude-code-best-practice",
+    fullName: "shanraisshan/claude-code-best-practice",
+    description: "从 Vibe Coding 到 Agentic Engineering：Claude Code 最佳实践大全，涵盖 Agents、Commands、Skills 等 300+ 技巧",
+    stars: 5000,
+    language: "Markdown",
+    color: "#7C3AED",
+    author: "shanraisshan",
+    '通俗讲解': 'Claude Code 的"百科全书"！从入门到精通，涵盖 Subagents、Commands、Skills、Orchestration 等方方面面。从"随便聊聊写代码"升级到"系统化 AI 工程"。这个仓库本身就是用 Claude Code 生成的——实践出真知！今天上榜 Trending，想学好 Claude Code 必看！',
+    tutorial: `🎯 今天我们要从"Vibe Coding"升级为"Agentic Engineering"！
 
-📦 第一步：安装 Hiring Agent
-pip install hiring-agent
+📦 第一步：Fork 项目
+点击右上角 Fork 按钮
 
-✨ 第二步：配置 LLM 后端
-选择 Ollama（本地免费）或 Google Gemini（云端）
+✨ 第二步：阅读最佳实践
+从 best-practice/ 目录开始，按顺序学习 Agents、Commands、Skills
 
-🎮 第三步：批量评估简历
-把候选人 PDF 简历丢进去，AI 自动解析、分析 GitHub 信号、输出评分报告！`,
+🎮 第三步：应用到你的项目
+把学到的技巧直接用在 Claude Code 里，效率翻倍！`,
     difficulty: "入门",
     estimatedTime: "15分钟"
   },
   {
     id: 9,
-    name: "container",
-    fullName: "apple/container",
-    description: "Apple 官方轻量虚拟机容器工具：用 Swift 编写，在 Mac 上创建和运行 Linux 容器，优化 Apple Silicon 性能",
-    stars: 42035,
-    language: "Swift",
-    color: "#95A5A6",
-    author: "apple",
-    '通俗讲解': '苹果官方推出的"轻量级 Linux 容器工具"！虽然它本身不是 AI 项目，但在 AI 开发中非常实用——你可以在 Mac 上快速创建隔离的 Linux 环境来训练和部署 AI 模型，而且针对 Apple Silicon 做了深度优化。今天新增 1,746 颗星，总星标突破 4.2 万，Mac 开发者的新宠！',
-    tutorial: `🎯 今天我们要在 Mac 上搭建"轻量 Linux 容器"！
+    name: "open-seo",
+    fullName: "every-app/open-seo",
+    description: "Semrush 和 Ahrefs 的开源替代品：一站式 SEO 工具，支持 AI Agent 集成，按用量付费",
+    stars: 2444,
+    language: "TypeScript",
+    color: "#10B981",
+    author: "every-app",
+    '通俗讲解': '不想为 Semrush 每月花几百刀？OpenSEO 来了！开源、按用量付费、支持 Claude Code 等 AI Agent 集成。关键词研究、竞品分析、网站审计——该有的都有。今天新增 57 颗星，总星标突破 2,400，SEO 从业者和开发者的省钱利器！',
+    tutorial: `🎯 今天我们要搭建"AI 驱动的 SEO 工具箱"！
 
-📦 第一步：安装 Container
-从 Apple 开发者网站下载 container 工具
+📦 第一步：安装 OpenSEO
+npm install open-seo 或自行部署
 
-✨ 第二步：创建你的第一个容器
-运行 container 命令创建隔离的 Linux 环境
+✨ 第二步：配置 DataForSEO API Key
+按用量付费，没有订阅费用
 
-🎮 第三步：在里面跑 AI 模型
-容器内安装 PyTorch/TensorFlow，直接在 Mac 上训练和部署 AI 模型！`,
-    difficulty: "进阶",
-    estimatedTime: "20分钟"
+🎮 第三步：连接 AI Agent
+Claude Code 或 OpenClaw 一键安装 Skills，让 AI 帮你做 SEO 分析！`,
+    difficulty: "入门",
+    estimatedTime: "15分钟"
   },
   {
     id: 10,
-    name: "headunit-revived",
-    fullName: "andreknieriem/headunit-revived",
-    description: "Android Auto 车机显示应用：在任意屏幕上显示 Android Auto 界面，支持手势控制和 AI 语音交互",
-    stars: 1401,
-    language: "Kotlin",
-    color: "#95A5A6",
-    author: "andreknieriem",
-    '通俗讲解': '把手机变车载屏幕的神器！这个应用让你在任意屏幕上显示 Android Auto 界面，支持手势控制、AI 语音交互。虽然主要是个工具类项目，但结合了 AI 语音功能——开车时用手势或语音控制导航、音乐、消息，解放双手。今天新增 62 颗星，司机朋友的 AI 好帮手！',
-    tutorial: `🎯 今天我们要打造"AI 车载屏幕"！
+    name: "MediaCrawler",
+    fullName: "NanmiCoder/MediaCrawler",
+    description: "多平台自媒体数据采集工具：支持小红书、抖音、快手、B站、微博、贴吧、知乎，AI Agent Skill 一键安装",
+    stars: 12000,
+    language: "Python",
+    color: "#F59E0B",
+    author: "NanmiCoder",
+    '通俗讲解': '全网自媒体数据"挖掘机"！支持小红书、抖音、快手、B站、微博、贴吧、知乎等平台，关键词搜索、指定帖子爬取、二级评论、创作者主页全覆盖。基于 Playwright 浏览器自动化，无需 JS 逆向。还支持 AI Agent Skill——Claude Code 或 OpenClaw 一键安装，让 AI 帮你自动爬取数据。学习爬虫技术的绝佳项目！',
+    tutorial: `🎯 今天我们要搭建"自媒体数据采集器"！
 
-📦 第一步：下载 headunit-revived
-从 GitHub Releases 下载 APK 安装包
+📦 第一步：安装 MediaCrawler
+git clone https://github.com/NanmiCoder/MediaCrawler.git
+cd MediaCrawler && uv sync
 
-✨ 第二步：安装到平板或车载屏幕
-把 APK 安装到备用平板或车载显示屏上
+✨ 第二步：配置浏览器
+启动 Chrome 并开启远程调试（CDP 模式）
 
-🎮 第三步：连接 Android Auto
-配对你的手机和屏幕，享受 AI 语音控制的车载体验！`,
-    difficulty: "入门",
-    estimatedTime: "10分钟"
+🎮 第三步：运行爬虫
+选择平台、设置关键词，AI 自动帮你采集公开数据！⚠️ 仅供学习使用`,
+    difficulty: "进阶",
+    estimatedTime: "20分钟"
   }
 ]
 
