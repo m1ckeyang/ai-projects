@@ -57,18 +57,41 @@ const generateDates = () => {
   return dates
 }
 
-// 2026年6月29日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
+// 2026年6月30日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
 const trendingProjects: Project[] = [
   {
     id: 1,
+    name: "simplex-chat",
+    fullName: "simplex-chat/simplex-chat",
+    description: "首个无需任何用户标识的隐私通讯网络——完全去中心化设计，iOS/Android/Desktop 全平台支持，100% 隐私保护",
+    stars: 16448,
+    language: "Haskell",
+    color: "#27AE60",
+    author: "simplex-chat",
+    '通俗讲解': '微信、Telegram 都在收集你的数据？SimpleX 说"不"！它是全球第一个完全不依赖任何用户标识的通讯应用——没有手机号、没有邮箱、没有用户 ID。你和朋友聊天就像在空气中传纸条，没人知道你是谁。今天新增 1,611 颗星，冲上 GitHub 热门第一！隐私至上者的终极选择！',
+    tutorial: `🎯 今天我们要建立"完全匿名"的通讯！
+
+📦 第一步：下载 SimpleX
+iOS / Android / Desktop 全平台支持，官网 simplex.chat 下载
+
+✨ 第二步：创建匿名会话
+不需要手机号或邮箱，直接开始匿名聊天
+
+🎮 第三步：享受真正隐私
+没有用户标识 = 没有人能追踪你。端到端加密 + 去中心化架构，连服务器都不知道你是谁！`,
+    difficulty: "入门",
+    estimatedTime: "5分钟"
+  },
+  {
+    id: 2,
     name: "ai-berkshire",
     fullName: "xbtlin/ai-berkshire",
     description: "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究",
-    stars: 5225,
+    stars: 6542,
     language: "Python",
-    color: "#27AE60",
+    color: "#E74C3C",
     author: "xbtlin",
-    '通俗讲解': '用 AI 重新定义投资研究！这个工具把巴菲特、芒格、段永平、李录四位大师的投资方法论系统化，通过 Claude Code / Codex 实现专业级投研。4 个 Agent 同时研究一家公司，各自独立搜索、独立判断、互相挑战。今天新增 1,456 颗星，冲上 GitHub 热门榜首，金融人的 AI 利器！',
+    '通俗讲解': '用 AI 重新定义投资研究！这个工具把巴菲特、芒格、段永平、李录四位大师的投资方法论系统化，通过 Claude Code / Codex 实现专业级投研。4 个 Agent 同时研究一家公司，各自独立搜索、独立判断、互相挑战。今天新增 1,397 颗星，冲上 GitHub 热门榜，金融人的 AI 利器！',
     tutorial: `🎯 今天我们要组建"AI 投研团队"！
 
 📦 第一步：安装 AI Berkshire
@@ -83,38 +106,15 @@ const trendingProjects: Project[] = [
     estimatedTime: "20分钟"
   },
   {
-    id: 2,
-    name: "codebase-memory-mcp",
-    fullName: "DeusData/codebase-memory-mcp",
-    description: "高性能代码智能 MCP 服务器：将代码库索引为持久化知识图谱，平均仓库毫秒级完成索引，158 种语言支持，零依赖单文件二进制",
-    stars: 3800,
-    language: "",
-    color: "#7C3AED",
-    author: "DeusData",
-    '通俗讲解': '给你的 AI 编程助手装上一个"代码大脑"！过去 AI 读代码像翻书一样一页页看，又慢又费 token。这个工具把整个代码库瞬间变成知识图谱——函数关系、类继承、跨服务调用一目了然。Linux 内核 2800 万行代码只要 3 分钟就索引完！支持 Claude Code、Cursor、Codex 等 11 种 AI 编程工具，今天刚上榜 GitHub Trending！',
-    tutorial: `🎯 今天我们要给 AI 编程助手装上"超级大脑"！
-
-📦 第一步：一行命令安装
-curl -fsSL https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.sh | bash
-
-✨ 第二步：重启你的 AI 编程助手
-Claude Code / Cursor / Codex 会自动检测到 MCP 服务器
-
-🎮 第三步：问它"这个函数在哪里被调用？"
-毫秒级回答，比 grep 快 100 倍！`,
-    difficulty: "入门",
-    estimatedTime: "10分钟"
-  },
-  {
     id: 3,
     name: "FluidVoice",
     fullName: "altic-dev/FluidVoice",
     description: "最快的 macOS 离线语音输入应用——完全本地运行的语音转文字，支持 AI 增强排版，无需联网无需 API Key",
-    stars: 3620,
+    stars: 4318,
     language: "Swift",
-    color: "#E74C3C",
+    color: "#10B981",
     author: "altic-dev",
-    '通俗讲解': 'Mac 用户的语音输入神器！不用联网、不用花钱买 API、数据全在你电脑上。说话的时候几乎零延迟看到文字，而且 AI 会自动帮你加标点、大写、分段。今天新增 491 颗星，用 Homebrew 一条命令就能装：brew install --cask fluidvoice。隐私党的最爱！',
+    '通俗讲解': 'Mac 用户的语音输入神器！不用联网、不用花钱买 API、数据全在你电脑上。说话的时候几乎零延迟看到文字，而且 AI 会自动帮你加标点、大写、分段。今天新增 836 颗星，用 Homebrew 一条命令就能装：brew install --cask fluidvoice。隐私党的最爱！',
     tutorial: `🎯 今天我们要让 Mac 变成"录音笔+打字机"！
 
 📦 第一步：Homebrew 一键安装
@@ -130,104 +130,127 @@ brew install --cask fluidvoice
   },
   {
     id: 4,
-    name: "MinerU",
-    fullName: "opendatalab/MinerU",
-    description: "高精度文档解析引擎：将 PDF、Office 文档、网页转化为 LLM 可用的 Markdown/JSON，支持 VLM+OCR 双引擎、109 种语言、MCP Server 集成",
-    stars: 18500,
-    language: "Python",
-    color: "#10B981",
-    author: "opendatalab",
-    '通俗讲解': 'PDF 转 AI 能读懂的格式？MinerU 一键搞定！不管是扫描版 PDF、Word、PPT 还是网页，它都能精准提取文字、表格、公式，输出成 Markdown 或 JSON。特别适合给 RAG 系统和 AI Agent 喂文档。支持国产 AI 芯片（昇腾、寒武纪等），今天新增 300+ 颗星，国内 AI 圈超火的项目！',
-    tutorial: `🎯 今天我们要让 AI "读懂"任何文档！
+    name: "council-of-high-intelligence",
+    fullName: "0xNyk/council-of-high-intelligence",
+    description: "18 个 AI 人格为你出谋划策：亚里士多德、费曼、卡尼曼、Torvalds 等——跨 LLM 提供商的多轮结构化讨论，一条命令 /council",
+    stars: 1809,
+    language: "Shell",
+    color: "#7C3AED",
+    author: "0xNyk",
+    '通俗讲解': '遇到难题不知道该听谁的？叫来 18 位历史名人 AI 化身一起讨论！亚里士多德讲哲学、费曼讲物理、卡尼曼讲行为经济学、Torvalds 讲技术决策……它们不是一个人自言自语，而是跨多个 LLM 提供商（GPT、Claude、Gemini 等）真正"辩论"。今天新增 323 颗星，决策困难症患者的救星！',
+    tutorial: `🎯 今天我们要组一个"AI 智囊团"！
 
-📦 第一步：安装 MinerU
-pip install mineru 或 docker 部署
+📦 第一步：安装 council-of-high-intelligence
+按 README 克隆项目并安装依赖
 
-✨ 第二步：上传你的文档
-PDF、Word、PPT、Excel、图片——统统支持
+✨ 第二步：配置你的 LLM API Keys
+支持 OpenAI、Anthropic、Google 等多个提供商
 
-🎮 第三步：拿到结构化数据
-AI 可以直接用输出的 Markdown/JSON 做 RAG、问答、摘要！`,
+🎮 第三步：输入你的难题
+运行 /council "我该不该换工作？"——18 位 AI 大师各抒己见！`,
     difficulty: "入门",
     estimatedTime: "10分钟"
   },
   {
     id: 5,
-    name: "lingbot-map",
-    fullName: "Robbyant/lingbot-map",
-    description: "前馈式 3D 基础模型：从流式视频数据实时重建 3D 场景，支持 10000+ 帧长序列流式推理，性能达 20 FPS",
-    stars: 8158,
+    name: "VulnClaw",
+    fullName: "Unclecheng-li/VulnClaw",
+    description: "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排，配合大语言模型，自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程",
+    stars: 1097,
     language: "Python",
-    color: "#F59E0B",
-    author: "Robbyant",
-    '通俗讲解': '手机边走边拍就能重建 3D 世界？lingbot-map 做到了！它不像传统方案需要来回优化，而是像人眼一样"看一遍就记住"。走在家里、办公室里，边走边拍，AI 实时构建 3D 地图。Linux 内核级别的工程能力——2800 万行代码 3 分钟索引完。今天新增 372 颗星，自动驾驶和 AR 领域的重磅项目！',
-    tutorial: `🎯 今天我们要让手机变成"3D 扫描仪"！
+    color: "#E67E22",
+    author: "Unclecheng-li",
+    '通俗讲解': '用自然语言就能做渗透测试？VulnClaw 让 AI Agent 帮你走完全流程——你说"帮我扫一下这个网站"，它自动完成信息收集、漏洞发现、漏洞利用、报告生成。配合 MCP 工具链，像真人黑客一样思考。今天新增 105 颗星，安全从业者和红队测试的新武器！⚠️ 仅用于授权测试',
+    tutorial: `🎯 今天我们要让 AI 当"白帽黑客"！
 
-📦 第一步：安装环境
-conda create -n lingbot-map python=3.10 && pip install torch==2.8.0
+📦 第一步：安装 VulnClaw
+按 README 安装 Python 依赖和环境
 
-✨ 第二步：下载模型
-pip install -e . 然后下载预训练权重
+✨ 第二步：配置 MCP 工具链
+连接你的渗透测试工具和 LLM API
 
-🎮 第三步：运行演示
-python demo.py --video your_video.mp4 —— 实时 3D 重建！`,
+🎮 第三步：自然语言下达指令
+"帮我扫描 example.com 的安全漏洞"——AI 自动完成全流程！⚠️ 仅用于授权测试`,
     difficulty: "进阶",
-    estimatedTime: "30分钟"
+    estimatedTime: "25分钟"
   },
   {
     id: 6,
-    name: "Vibe-Trading",
-    fullName: "HKUDS/Vibe-Trading",
-    description: "港大出品：你的个人 AI 交易 Agent，一键命令赋予 Agent 全面的交易能力，支持多策略回测和影子账户模拟",
-    stars: 13657,
-    language: "Python",
-    color: "#FF9900",
-    author: "HKUDS",
-    '通俗讲解': '港大科研级 AI 交易工具！Vibe-Trading 让你的 AI Agent 瞬间变成交易员——支持多种交易策略、回测验证、影子账户模拟。今天刚更新了内容过滤器弹性和影子账户功能。总星标 1.3 万，量化交易爱好者的宝藏项目！⚠️ 仅供学习研究，投资有风险',
-    tutorial: `🎯 今天我们要搭建"AI 交易员"！
+    name: "tolaria",
+    fullName: "refactoringhq/tolaria",
+    description: "桌面端 Markdown 知识库管理应用——像 Notion 一样组织你的笔记，但完全本地运行，支持 AI 增强搜索和知识图谱",
+    stars: 17471,
+    language: "TypeScript",
+    color: "#1677FF",
+    author: "refactoringhq",
+    '通俗讲解': '想要 Notion 的体验但讨厌云端同步？Tolaria 来了！这是一个桌面端的 Markdown 知识库，像 Notion 一样好用但所有数据都在你本地。支持 AI 增强的搜索和知识图谱——自动发现笔记之间的关联。今天新增 249 颗星，总星标 1.7 万，知识管理爱好者的新宠！',
+    tutorial: `🎯 今天我们要搭建"本地 Notion"！
 
-📦 第一步：安装 Vibe-Trading
-pip install vibe-trading-ai 或按 README 部署
+📦 第一步：下载 Tolaria
+去 refactoringhq/tolaria  Releases 下载桌面安装包
 
-✨ 第二步：配置交易 API
-接入券商 API 或先用影子账户模拟交易
+✨ 第二步：导入你的 Markdown 笔记
+支持从 Obsidian、Logseq 等工具迁移
 
-🎮 第三步：让 AI 帮你交易
-"帮我分析 AAPL 的走势"、"用动量策略跑个回测"——AI 自动执行！⚠️ 投资有风险，仅供学习研究`,
-    difficulty: "进阶",
-    estimatedTime: "30分钟"
+🎮 第三步：享受 AI 增强搜索
+输入关键词，AI 自动关联相关笔记——知识不再是孤岛！`,
+    difficulty: "入门",
+    estimatedTime: "10分钟"
   },
   {
     id: 7,
-    name: "strix",
-    fullName: "usestrix/strix",
-    description: "开源 AI 黑客：自主 Agent 像真实黑客一样动态运行你的代码、发现漏洞并生成验证 PoC，支持 CI/CD 集成和自动修复",
-    stars: 4200,
-    language: "Python",
-    color: "#E67E22",
-    author: "usestrix",
-    '通俗讲解': '让 AI 当你的"白帽黑客"！Strix 不是静态扫描工具——它会像真黑客一样运行你的代码、尝试攻击、生成验证报告。团队模式支持多个 AI Agent 协作渗透测试，还能自动提交修复 PR。集成 GitHub Actions，每次 PR 自动扫描。今天新增 200+ 颗星，安全开发者的新宠！',
-    tutorial: `🎯 今天我们要让 AI 帮我们"找茬"！
+    name: "logto",
+    fullName: "logto-io/logto",
+    description: "面向 SaaS 和 AI 应用的认证授权基础设施——基于 OIDC 和 OAuth 2.1，支持多租户、SSO、RBAC",
+    stars: 12586,
+    language: "TypeScript",
+    color: "#0EA5E9",
+    author: "logto-io",
+    '通俗讲解': '做 SaaS 或 AI 应用最怕什么？用户认证！Logto 帮你搞定一切——OIDC、OAuth 2.1、多租户、SSO 单点登录、RBAC 权限管理，开箱即用。今天新增 77 颗星，总星标 1.2 万，开发者必备的基础设施。特别是做 AI 应用的，用户管理是绕不开的，Logto 替你操心！',
+    tutorial: `🎯 今天我们要给应用加上"企业级认证"！
 
-📦 第一步：一行命令安装
-curl -sSL https://strix.ai/install | bash
+📦 第一步：部署 Logto
+docker compose up -d 或按官方文档安装
 
-✨ 第二步：配置 LLM API Key
-export STRIX_LLM="openai/gpt-5.4" && export LLM_API_KEY="your-key"
+✨ 第二步：创建你的应用
+在 Logto 控制台注册你的 SaaS 或 AI 应用
 
-🎮 第三步：扫描你的应用
-strix --target ./app-directory —— AI 自动发现漏洞、生成 PoC、提交修复 PR！`,
+🎮 第三步：接入认证 SDK
+一行代码集成登录/注册/权限——支持 OIDC、OAuth 2.1、SSO！`,
     difficulty: "入门",
     estimatedTime: "15分钟"
   },
   {
     id: 8,
+    name: "agency-agents",
+    fullName: "msitarzewski/agency-agents",
+    description: "完整的 AI Agency 工具集——前端专家、Reddit 社区运营、创意注入器、现实核查员，每个 Agent 都是具备个性和流程的领域专家",
+    stars: 0,
+    language: "",
+    color: "#F59E0B",
+    author: "msitarzewski",
+    '通俗讲解': '想开一家 AI Agency 但不知道从哪里开始？Agency Agents 帮你组建了一支完整的虚拟团队！前端开发专家帮你做 UI、Reddit 社区运营帮你推广、创意注入器帮你 brainstorm、现实核查员帮你把关质量……每个 Agent 都有自己的性格和工作流程。今天刚上榜 GitHub Trending，创业者的 AI 团队雏形！',
+    tutorial: `🎯 今天我们要组建"AI 虚拟团队"！
+
+📦 第一步：克隆 agency-agents 项目
+git clone 并安装依赖
+
+✨ 第二步：配置每个 Agent 的角色
+前端专家、社区运营、创意总监、质量审核——各司其职
+
+🎮 第三步：启动你的 AI Agency
+让各个 Agent 协同工作，从项目构思到上线一条龙！`,
+    difficulty: "进阶",
+    estimatedTime: "25分钟"
+  },
+  {
+    id: 9,
     name: "video-use",
     fullName: "browser-use/video-use",
     description: "用 Claude Code 等编码 Agent 编辑视频：自动删废话、调色、加字幕、生成动画叠加层，100% 开源",
     stars: 2800,
     language: "Python",
-    color: "#1677FF",
+    color: "#EC4899",
     author: "browser-use",
     '通俗讲解': '让 AI 帮你剪视频！把原始素材扔进文件夹，告诉 Claude Code "帮我剪成一支产品介绍"，它自动删掉口误和停顿、调色、加字幕、生成动画特效。全程不用打开剪辑软件——AI 读视频通过音频转录+关键帧，不是真的"看"视频，省 token 又快速。今天刚上榜 GitHub Trending，视频创作者福音！',
     tutorial: `🎯 今天我们要让 AI 当"剪辑师"！
@@ -244,29 +267,6 @@ uv sync && brew install ffmpeg
     estimatedTime: "15分钟"
   },
   {
-    id: 9,
-    name: "simplex-chat",
-    fullName: "simplex-chat/simplex-chat",
-    description: "首个无需任何用户标识的隐私通讯网络——完全去中心化设计，iOS/Android/Desktop 全平台支持，100% 隐私保护",
-    stars: 14859,
-    language: "Haskell",
-    color: "#27AE60",
-    author: "simplex-chat",
-    '通俗讲解': '微信、Telegram 都在收集你的数据？SimpleX 说"不"！它是全球第一个完全不依赖任何用户标识的通讯应用——没有手机号、没有邮箱、没有用户 ID。你和朋友聊天就像在空气中传纸条，没人知道你是谁。今天新增 1,183 颗星，冲上 GitHub 热门第一！隐私至上者的终极选择！',
-    tutorial: `🎯 今天我们要建立"完全匿名"的通讯！
-
-📦 第一步：下载 SimpleX
-iOS / Android / Desktop 全平台支持，官网 simplex.chat 下载
-
-✨ 第二步：创建匿名会话
-不需要手机号或邮箱，直接开始匿名聊天
-
-🎮 第三步：享受真正隐私
-没有用户标识 = 没有人能追踪你。端到端加密 + 去中心化架构，连服务器都不知道你是谁！`,
-    difficulty: "入门",
-    estimatedTime: "5分钟"
-  },
-  {
     id: 10,
     name: "openpilot",
     fullName: "commaai/openpilot",
@@ -275,7 +275,7 @@ iOS / Android / Desktop 全平台支持，官网 simplex.chat 下载
     language: "Python",
     color: "#10B981",
     author: "commaai",
-    '通俗讲解': '让你的车变"智能车"！openpilot 是个开源自动驾驶操作系统，支持 300 多款车型。装上后自动帮你保持车道、控制车速、跟车距离。最重要的是——代码完全开源，社区持续迭代。今天新增 500+ 颗星，开源硬件+AI 的经典代表作！',
+    '通俗讲解': '让你的车变"智能车"！openpilot 是个开源自动驾驶操作系统，支持 300 多款车型。装上后自动帮你保持车道、控制车速、跟车距离。最重要的是——代码完全开源，社区持续迭代。总星标 4.2 万，开源硬件+AI 的经典代表作！',
     tutorial: `🎯 今天我们要给车装上"AI 大脑"！
 
 📦 第一步：检查你的车型是否支持
