@@ -57,18 +57,18 @@ const generateDates = () => {
   return dates
 }
 
-// 2026年6月30日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
+// 2026年7月1日 GitHub Trending 热门AI项目（数据来源：GitHub Trending 每日榜单，更新于 05:00 CST）
 const trendingProjects: Project[] = [
   {
     id: 1,
     name: "simplex-chat",
     fullName: "simplex-chat/simplex-chat",
     description: "首个无需任何用户标识的隐私通讯网络——完全去中心化设计，iOS/Android/Desktop 全平台支持，100% 隐私保护",
-    stars: 16448,
+    stars: 17298,
     language: "Haskell",
     color: "#27AE60",
     author: "simplex-chat",
-    '通俗讲解': '微信、Telegram 都在收集你的数据？SimpleX 说"不"！它是全球第一个完全不依赖任何用户标识的通讯应用——没有手机号、没有邮箱、没有用户 ID。你和朋友聊天就像在空气中传纸条，没人知道你是谁。今天新增 1,611 颗星，冲上 GitHub 热门第一！隐私至上者的终极选择！',
+    '通俗讲解': '微信、Telegram 都在收集你的数据？SimpleX 说"不"！它是全球第一个完全不依赖任何用户标识的通讯应用——没有手机号、没有邮箱、没有用户 ID。你和朋友聊天就像在空气中传纸条，没人知道你是谁。今天新增 1,229 颗星，总星标 1.7 万，隐私至上者的终极选择！',
     tutorial: `🎯 今天我们要建立"完全匿名"的通讯！
 
 📦 第一步：下载 SimpleX
@@ -87,11 +87,11 @@ iOS / Android / Desktop 全平台支持，官网 simplex.chat 下载
     name: "ai-berkshire",
     fullName: "xbtlin/ai-berkshire",
     description: "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究",
-    stars: 6542,
+    stars: 7442,
     language: "Python",
     color: "#E74C3C",
     author: "xbtlin",
-    '通俗讲解': '用 AI 重新定义投资研究！这个工具把巴菲特、芒格、段永平、李录四位大师的投资方法论系统化，通过 Claude Code / Codex 实现专业级投研。4 个 Agent 同时研究一家公司，各自独立搜索、独立判断、互相挑战。今天新增 1,397 颗星，冲上 GitHub 热门榜，金融人的 AI 利器！',
+    '通俗讲解': '用 AI 重新定义投资研究！这个工具把巴菲特、芒格、段永平、李录四位大师的投资方法论系统化，通过 Claude Code / Codex 实现专业级投研。4 个 Agent 同时研究一家公司，各自独立搜索、独立判断、互相挑战。今天新增 966 颗星，冲上 GitHub 热门榜，金融人的 AI 利器！',
     tutorial: `🎯 今天我们要组建"AI 投研团队"！
 
 📦 第一步：安装 AI Berkshire
@@ -107,14 +107,60 @@ iOS / Android / Desktop 全平台支持，官网 simplex.chat 下载
   },
   {
     id: 3,
+    name: "herdr",
+    fullName: "ogulcancelik/herdr",
+    description: "终端里的 AI Agent 多路复用器——在命令行中同时运行和管理多个 AI Agent，一个终端掌控所有智能助手",
+    stars: 8929,
+    language: "Rust",
+    color: "#7C3AED",
+    author: "ogulcancelik",
+    '通俗讲解': '你装了 5 个 AI 助手，每个都要开一个窗口？Herdr 说"别闹了"！它让你在终端里同时运行多个 AI Agent，像管理终端窗口一样管理 AI 对话。Rust 写的，快得飞起。今天新增 485 颗星，总星标近 9 千，开发者效率工具的新选择！',
+    tutorial: `🎯 今天我们要让终端"分身有术"！
+
+📦 第一步：安装 Herdr
+cargo install herdr 或从 releases 下载预编译版本
+
+✨ 第二步：配置你的 Agent
+连接 OpenAI、Anthropic、Google 等多个 AI 提供商
+
+🎮 第三步：在终端里同时对话
+打开 Herdr，同时管理多个 AI Agent——像 tmux 一样丝滑！`,
+    difficulty: "入门",
+    estimatedTime: "10分钟"
+  },
+  {
+    id: 4,
+    name: "OmniRoute",
+    fullName: "diegosouzapw/OmniRoute",
+    description: "免费 AI 网关：一个端点接入 231+ 提供商（50+ 免费），支持 Claude Code/Codex/Cursor，RTK 压缩节省 15-95% token 消耗",
+    stars: 8399,
+    language: "TypeScript",
+    color: "#0EA5E9",
+    author: "diegosouzapw",
+    '通俗讲解': 'AI API 太贵？OmniRoute 帮你省钱！一个接口接入了 231 个 AI 提供商，其中 50+ 免费。最厉害的是它的压缩技术——能把 token 消耗降低 15-95%！还能自动切换到备用提供商，不怕挂。今天新增 459 颗星，总星标 8,300+，省钱达人的福音！',
+    tutorial: `🎯 今天我们要让 AI 调用"更便宜"！
+
+📦 第一步：部署 OmniRoute
+docker compose up -d 或按官方文档安装
+
+✨ 第二步：接入你的 AI 工具
+支持 Claude Code、Codex、Cursor、Cline、Copilot 等
+
+🎮 第三步：享受免费+压缩
+一个端点搞定所有 AI 提供商，token 费用直降 90%！`,
+    difficulty: "入门",
+    estimatedTime: "10分钟"
+  },
+  {
+    id: 5,
     name: "FluidVoice",
     fullName: "altic-dev/FluidVoice",
     description: "最快的 macOS 离线语音输入应用——完全本地运行的语音转文字，支持 AI 增强排版，无需联网无需 API Key",
-    stars: 4318,
+    stars: 4856,
     language: "Swift",
     color: "#10B981",
     author: "altic-dev",
-    '通俗讲解': 'Mac 用户的语音输入神器！不用联网、不用花钱买 API、数据全在你电脑上。说话的时候几乎零延迟看到文字，而且 AI 会自动帮你加标点、大写、分段。今天新增 836 颗星，用 Homebrew 一条命令就能装：brew install --cask fluidvoice。隐私党的最爱！',
+    '通俗讲解': 'Mac 用户的语音输入神器！不用联网、不用花钱买 API、数据全在你电脑上。说话的时候几乎零延迟看到文字，而且 AI 会自动帮你加标点、大写、分段。今天新增 586 颗星，总星标 4,800+，用 Homebrew 一条命令就能装：brew install --cask fluidvoice。隐私党的最爱！',
     tutorial: `🎯 今天我们要让 Mac 变成"录音笔+打字机"！
 
 📦 第一步：Homebrew 一键安装
@@ -129,122 +175,30 @@ brew install --cask fluidvoice
     estimatedTime: "5分钟"
   },
   {
-    id: 4,
-    name: "council-of-high-intelligence",
-    fullName: "0xNyk/council-of-high-intelligence",
-    description: "18 个 AI 人格为你出谋划策：亚里士多德、费曼、卡尼曼、Torvalds 等——跨 LLM 提供商的多轮结构化讨论，一条命令 /council",
-    stars: 1809,
-    language: "Shell",
-    color: "#7C3AED",
-    author: "0xNyk",
-    '通俗讲解': '遇到难题不知道该听谁的？叫来 18 位历史名人 AI 化身一起讨论！亚里士多德讲哲学、费曼讲物理、卡尼曼讲行为经济学、Torvalds 讲技术决策……它们不是一个人自言自语，而是跨多个 LLM 提供商（GPT、Claude、Gemini 等）真正"辩论"。今天新增 323 颗星，决策困难症患者的救星！',
-    tutorial: `🎯 今天我们要组一个"AI 智囊团"！
-
-📦 第一步：安装 council-of-high-intelligence
-按 README 克隆项目并安装依赖
-
-✨ 第二步：配置你的 LLM API Keys
-支持 OpenAI、Anthropic、Google 等多个提供商
-
-🎮 第三步：输入你的难题
-运行 /council "我该不该换工作？"——18 位 AI 大师各抒己见！`,
-    difficulty: "入门",
-    estimatedTime: "10分钟"
-  },
-  {
-    id: 5,
-    name: "VulnClaw",
-    fullName: "Unclecheng-li/VulnClaw",
-    description: "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排，配合大语言模型，自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程",
-    stars: 1097,
-    language: "Python",
-    color: "#E67E22",
-    author: "Unclecheng-li",
-    '通俗讲解': '用自然语言就能做渗透测试？VulnClaw 让 AI Agent 帮你走完全流程——你说"帮我扫一下这个网站"，它自动完成信息收集、漏洞发现、漏洞利用、报告生成。配合 MCP 工具链，像真人黑客一样思考。今天新增 105 颗星，安全从业者和红队测试的新武器！⚠️ 仅用于授权测试',
-    tutorial: `🎯 今天我们要让 AI 当"白帽黑客"！
-
-📦 第一步：安装 VulnClaw
-按 README 安装 Python 依赖和环境
-
-✨ 第二步：配置 MCP 工具链
-连接你的渗透测试工具和 LLM API
-
-🎮 第三步：自然语言下达指令
-"帮我扫描 example.com 的安全漏洞"——AI 自动完成全流程！⚠️ 仅用于授权测试`,
-    difficulty: "进阶",
-    estimatedTime: "25分钟"
-  },
-  {
     id: 6,
-    name: "tolaria",
-    fullName: "refactoringhq/tolaria",
-    description: "桌面端 Markdown 知识库管理应用——像 Notion 一样组织你的笔记，但完全本地运行，支持 AI 增强搜索和知识图谱",
-    stars: 17471,
-    language: "TypeScript",
-    color: "#1677FF",
-    author: "refactoringhq",
-    '通俗讲解': '想要 Notion 的体验但讨厌云端同步？Tolaria 来了！这是一个桌面端的 Markdown 知识库，像 Notion 一样好用但所有数据都在你本地。支持 AI 增强的搜索和知识图谱——自动发现笔记之间的关联。今天新增 249 颗星，总星标 1.7 万，知识管理爱好者的新宠！',
-    tutorial: `🎯 今天我们要搭建"本地 Notion"！
+    name: "agents-cli",
+    fullName: "google/agents-cli",
+    description: "Google 出品的 CLI 工具——把任何编程助手变成创建、评估和部署 AI Agent 的专家，附带 Skills 系统",
+    stars: 4109,
+    language: "Python",
+    color: "#4285F4",
+    author: "google",
+    '通俗讲解': 'Google 官方出的 AI Agent 开发工具包！有了它，Claude Code、Cursor、Copilot 等编程助手瞬间变身 AI Agent 专家。自带 Skills 系统，帮你创建、评估、部署 AI Agent。今天新增 433 颗星，大厂出品，值得信赖！适合想认真做 AI Agent 的开发者。',
+    tutorial: `🎯 今天我们要用 Google 的工具"造 Agent"！
 
-📦 第一步：下载 Tolaria
-去 refactoringhq/tolaria  Releases 下载桌面安装包
+📦 第一步：安装 agents-cli
+pip install agents-cli 或按官方文档安装
 
-✨ 第二步：导入你的 Markdown 笔记
-支持从 Obsidian、Logseq 等工具迁移
+✨ 第二步：连接到你的编程助手
+支持 Claude Code、Cursor、Cline 等主流工具
 
-🎮 第三步：享受 AI 增强搜索
-输入关键词，AI 自动关联相关笔记——知识不再是孤岛！`,
-    difficulty: "入门",
-    estimatedTime: "10分钟"
-  },
-  {
-    id: 7,
-    name: "logto",
-    fullName: "logto-io/logto",
-    description: "面向 SaaS 和 AI 应用的认证授权基础设施——基于 OIDC 和 OAuth 2.1，支持多租户、SSO、RBAC",
-    stars: 12586,
-    language: "TypeScript",
-    color: "#0EA5E9",
-    author: "logto-io",
-    '通俗讲解': '做 SaaS 或 AI 应用最怕什么？用户认证！Logto 帮你搞定一切——OIDC、OAuth 2.1、多租户、SSO 单点登录、RBAC 权限管理，开箱即用。今天新增 77 颗星，总星标 1.2 万，开发者必备的基础设施。特别是做 AI 应用的，用户管理是绕不开的，Logto 替你操心！',
-    tutorial: `🎯 今天我们要给应用加上"企业级认证"！
-
-📦 第一步：部署 Logto
-docker compose up -d 或按官方文档安装
-
-✨ 第二步：创建你的应用
-在 Logto 控制台注册你的 SaaS 或 AI 应用
-
-🎮 第三步：接入认证 SDK
-一行代码集成登录/注册/权限——支持 OIDC、OAuth 2.1、SSO！`,
+🎮 第三步：开始创建 AI Agent
+用自然语言描述你的 Agent，Google 的工具帮你落地！`,
     difficulty: "入门",
     estimatedTime: "15分钟"
   },
   {
-    id: 8,
-    name: "agency-agents",
-    fullName: "msitarzewski/agency-agents",
-    description: "完整的 AI Agency 工具集——前端专家、Reddit 社区运营、创意注入器、现实核查员，每个 Agent 都是具备个性和流程的领域专家",
-    stars: 0,
-    language: "",
-    color: "#F59E0B",
-    author: "msitarzewski",
-    '通俗讲解': '想开一家 AI Agency 但不知道从哪里开始？Agency Agents 帮你组建了一支完整的虚拟团队！前端开发专家帮你做 UI、Reddit 社区运营帮你推广、创意注入器帮你 brainstorm、现实核查员帮你把关质量……每个 Agent 都有自己的性格和工作流程。今天刚上榜 GitHub Trending，创业者的 AI 团队雏形！',
-    tutorial: `🎯 今天我们要组建"AI 虚拟团队"！
-
-📦 第一步：克隆 agency-agents 项目
-git clone 并安装依赖
-
-✨ 第二步：配置每个 Agent 的角色
-前端专家、社区运营、创意总监、质量审核——各司其职
-
-🎮 第三步：启动你的 AI Agency
-让各个 Agent 协同工作，从项目构思到上线一条龙！`,
-    difficulty: "进阶",
-    estimatedTime: "25分钟"
-  },
-  {
-    id: 9,
+    id: 7,
     name: "video-use",
     fullName: "browser-use/video-use",
     description: "用 Claude Code 等编码 Agent 编辑视频：自动删废话、调色、加字幕、生成动画叠加层，100% 开源",
@@ -252,7 +206,7 @@ git clone 并安装依赖
     language: "Python",
     color: "#EC4899",
     author: "browser-use",
-    '通俗讲解': '让 AI 帮你剪视频！把原始素材扔进文件夹，告诉 Claude Code "帮我剪成一支产品介绍"，它自动删掉口误和停顿、调色、加字幕、生成动画特效。全程不用打开剪辑软件——AI 读视频通过音频转录+关键帧，不是真的"看"视频，省 token 又快速。今天刚上榜 GitHub Trending，视频创作者福音！',
+    '通俗讲解': '让 AI 帮你剪视频！把原始素材扔进文件夹，告诉 Claude Code "帮我剪成一支产品介绍"，它自动删掉口误和停顿、调色、加字幕、生成动画特效。全程不用打开剪辑软件——AI 读视频通过音频转录+关键帧，不是真的"看"视频，省 token 又快速。视频创作者福音！',
     tutorial: `🎯 今天我们要让 AI 当"剪辑师"！
 
 📦 第一步：克隆项目
@@ -267,27 +221,73 @@ uv sync && brew install ffmpeg
     estimatedTime: "15分钟"
   },
   {
+    id: 8,
+    name: "astryx",
+    fullName: "facebook/astryx",
+    description: "Facebook 开源的可定制设计系统——专为 AI Agent 打造，支持 Agent 自动理解和操作 UI 界面",
+    stars: 1695,
+    language: "TypeScript",
+    color: "#1877F2",
+    author: "facebook",
+    '通俗讲解': 'Facebook 出的设计系统，但和普通设计系统不一样——它是专门为 AI Agent 设计的！让 AI 能自动理解你的 UI 界面、操作按钮、填写表单。今天新增 399 颗星，总星标 1,600+，做 AI 产品的开发者必备！如果你的应用要让 AI 帮你操作界面，Astryx 就是那个桥梁。',
+    tutorial: `🎯 今天我们要让 AI "看懂"你的界面！
+
+📦 第一步：安装 Astryx
+npm install @facebook/astryx 或 yarn add @facebook/astryx
+
+✨ 第二步：配置你的组件
+Astryx 支持主流 UI 框架，开箱即用
+
+🎮 第三步：让 Agent 自动操作
+AI Agent 现在能理解你的按钮、表单、导航栏了——自动化程度直线上升！`,
+    difficulty: "入门",
+    estimatedTime: "10分钟"
+  },
+  {
+    id: 9,
+    name: "agency-agents",
+    fullName: "msitarzewski/agency-agents",
+    description: "完整的 AI Agency 工具集——前端专家、Reddit 社区运营、创意注入器、现实核查员，每个 Agent 都是具备个性和流程的领域专家",
+    stars: 3200,
+    language: "Python",
+    color: "#F59E0B",
+    author: "msitarzewski",
+    '通俗讲解': '想开一家 AI Agency 但不知道从哪里开始？Agency Agents 帮你组建了一支完整的虚拟团队！前端开发专家帮你做 UI、Reddit 社区运营帮你推广、创意注入器帮你 brainstorm、现实核查员帮你把关质量……每个 Agent 都有自己的性格和工作流程。刚上榜 GitHub Trending，创业者的 AI 团队雏形！',
+    tutorial: `🎯 今天我们要组建"AI 虚拟团队"！
+
+📦 第一步：克隆 agency-agents 项目
+git clone 并安装依赖
+
+✨ 第二步：配置每个 Agent 的角色
+前端专家、社区运营、创意总监、质量审核——各司其职
+
+🎮 第三步：启动你的 AI Agency
+让各个 Agent 协同工作，从项目构思到上线一条龙！`,
+    difficulty: "进阶",
+    estimatedTime: "25分钟"
+  },
+  {
     id: 10,
-    name: "openpilot",
-    fullName: "commaai/openpilot",
-    description: "开源自动驾驶操作系统：为 300+ 车型提供驾驶辅助升级，自适应巡航 + 车道保持全自动，社区驱动持续迭代",
-    stars: 42000,
+    name: "lingbot-map",
+    fullName: "Robbyant/lingbot-map",
+    description: "前馈式 3D 基础模型——从流式数据重建 3D 场景，比传统 NeRF 快 100 倍，实时渲染 streaming 数据",
+    stars: 8821,
     language: "Python",
     color: "#10B981",
-    author: "commaai",
-    '通俗讲解': '让你的车变"智能车"！openpilot 是个开源自动驾驶操作系统，支持 300 多款车型。装上后自动帮你保持车道、控制车速、跟车距离。最重要的是——代码完全开源，社区持续迭代。总星标 4.2 万，开源硬件+AI 的经典代表作！',
-    tutorial: `🎯 今天我们要给车装上"AI 大脑"！
+    author: "Robbyant",
+    '通俗讲解': '3D 重建一直很慢？这个模型说"太慢了"！lingbot-map 是一个前馈式 3D 基础模型，能从流式数据（比如视频）实时重建 3D 场景，比传统的 NeRF 方法快了 100 倍！今天新增 210 颗星，总星标 8,800+，游戏开发、VR/AR、数字孪生的核心技术。想象一下——拍一段视频，AI 立刻给你建出一个 3D 世界！',
+    tutorial: `🎯 今天我们要让 AI "秒建" 3D 世界！
 
-📦 第一步：检查你的车型是否支持
-去 comma.ai 查看 300+ 支持车型列表
+📦 第一步：克隆 lingbot-map
+git clone https://github.com/Robbyant/lingbot-map && cd lingbot-map
 
-✨ 第二步：购买硬件
-comma 3X 设备 + 安装套件
+✨ 第二步：安装依赖
+pip install -r requirements.txt
 
-🎮 第三步：安装 openpilot
-按指南刷入系统，上路体验自动驾驶辅助！⚠️ 安全第一，始终注意路况`,
+🎮 第三步：输入视频/流式数据
+AI 实时重建 3D 场景——速度比传统方法快 100 倍！`,
     difficulty: "进阶",
-    estimatedTime: "60分钟"
+    estimatedTime: "20分钟"
   }
 ]
 
